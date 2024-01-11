@@ -1,0 +1,263 @@
+\documentclass[12pt]{article}
+\usepackage{listings}
+\usepackage{underscore}
+\usepackage{graphicx}
+\usepackage{geometry}
+\usepackage{multirow}
+\usepackage{array}
+\geometry{a4paper, margin=1in}
+\usepackage[bookmarks=true]{hyperref}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{float}
+\usepackage{longtable}
+\usepackage{enumitem}
+\renewcommand{\arraystretch}{1.5}
+\newcolumntype{P}[1]{>{\centering\arraybackslash}p{#1}}
+
+
+% hi is it working
+% yes
+\def\myversion{1.0 }
+\date{}
+%\title{%
+
+%}
+\usepackage{hyperref}
+
+\setlist[itemize]{itemsep=0pt}
+\begin{document}
+
+\begin{center}
+
+    \rule{16cm}{5pt}\vskip1cm
+    \begin{bfseries}
+        \Huge{DESIGN OF SYSTEMS LAB [ELP305]}\\
+        \vspace{2cm}
+        \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.45\linewidth]{iitd_logo.png}
+        \end{figure}
+        \vspace{0.5cm}
+        Cloth Cleaning Machine
+        Requirements Document\\
+        \LARGE{( Draft Version \myversion)}\\
+        \vspace{3.5cm}
+        Submission by Tribe - E\\
+        \today\\
+    \end{bfseries}
+\end{center}
+\newpage
+\tableofcontents
+\newpage
+\section{Tribe Members Information}
+
+\begin{longtable}{|P{3.8cm}|P{2.95cm}|P{4cm}|P{1.2cm}|}
+\hline
+  \textbf{Name} & \textbf{Entry Number} & \textbf{Additional Role} & \textbf{IF} \\
+  \hline
+  \endfirsthead
+
+  \multicolumn{4}{c}%
+  {{\bfseries \tablename\ \thetable{} -- continued from previous page}} \\
+  \hline
+  \textbf{Name} & \textbf{Entry Number} & \textbf{Additional Role} & \textbf{IF} \\
+  \hline
+  \endhead
+
+  %\hline \multicolumn{4}{|r|}{{Continued on next page}} \\ \hline
+  %\endfoot
+
+  \endlastfoot
+
+  Samarth Singla & 2021MT60942 & Tribe Coordinator & 1 \\
+  \hline
+  Tarun Gupta & 2021EE30482 & Associate Tribe Coordinator & 1 \\
+  \hline
+  Akshat Chaudhary & 2021MT60814 & Activity Coordinator & 1 \\
+  \hline
+  Ronak Kalvani & 2021MT60952 & Member & 1 \\
+  \hline
+  Shailesh Saini & 2021MT10925 & Member & 1 \\
+  \hline
+  Abhirashi Singh & 2021EE10646 & Member & 1 \\
+  \hline
+  Himanshi Barsker & 2021MT10929 & Member & 1 \\
+  \hline
+  Aditya Raj & 2021MT10262 & Member & 1 \\
+  \hline
+  Surya Pratap Singh & 2021MT10248 & Member & 1 \\
+  \hline
+  Riju Bindua & 2021MT10903 & Member & 1 \\
+  \hline
+  Komal Gumma & 2021EE10677 & Member & 1 \\
+  \hline
+  Rashmi & 2021MT10934 & Member & 1 \\
+  \hline
+  Madhav Manish Gulati & 2021EE10139 & Activity Coordinator (Electrical) & 1 \\
+  \hline
+  Nihar Patel & 2021MT10890 & Member & 1 \\
+  \hline
+  Jamith Kaur & 2021MT60951 & Member & 1 \\
+  \hline
+  Saket Kandoi & 2021MT60265 & Member & 1 \\
+  \hline
+  Yash Sajjansingh Chavan & 2021MT60966 & Member & 1 \\
+  \hline
+  Aniruddha Chatterjee & 2021MT10896 & Member & 1 \\
+  \hline
+  Ananmay Gupta & 2021MT10894 & Member & 1 \\
+  \hline
+  Abhishek Kumar & 2021MT60957 & Member & 1 \\
+  \hline
+  M Bhavya & 2021EE10648 & Member & 1 \\
+  \hline
+  Satwik Kumar & 2021MT10740 & Member & 1 \\
+  \hline
+  Ankit Mukherjee & 2021EE30209 & Member & 1 \\
+  \hline
+  Shashank Mahawar & 2021EE11108 & Member & 1 \\
+  \hline
+  Hardik Varshney & 2021EE10383 & Activity Coordinator & 1 \\
+  \hline
+  Saumya Srivastava & 2021EE10644 & Member & 1 \\
+  \hline
+  Siddharth Gupta & 2021EE10627 & Member & 1 \\
+  \hline
+  Shreyash Bhilwade & 2021EE30178 & Member & 1 \\
+  \hline
+  Sumit Sharma & 2021MT10264 & Member & 1 \\
+  \hline
+  Shreyansh Jain & 2021EE10661 & Member & 1 \\
+  \hline
+  Deependra Patel & 2021EE30278 & Member & 1 \\
+  \hline
+  Abhinav Kumar & 2021MT10251 & Member & 1 \\
+  \hline
+  Kumar Arjun & 2021MT10232 & Member & 1 \\
+  \hline
+  Jishnu Singh & 2021EE10624 & Member & 1 \\
+  \hline
+  Shresth Ojha & 2021EE30969 & Member & 1 \\
+  \hline
+  Shivam Jhanwar & 2021EE10625 & Member & 1 \\
+  \hline
+  Adnaan Mansoor & 2021EE10666 & Member & 1 \\
+  \hline
+  Bhaira Ram Gat & 2021EE30726 & Member & 1 \\
+  \hline
+  Nandini Choudhary & 2021EE30716 & Activity Coordinator & 1 \\
+  \hline
+  Shouryan Singh & 2021MT60943 & Member & 1 \\
+  \hline
+  Kartik Kumar Bansiwal & 2021EE30743 & Member & 1 \\
+  \hline
+  Gouri Nanda T R & 2021MT60960 & Member & 1 \\
+  \hline
+  Siddhant Raj & 2021MT10932 & Member & 1 \\
+  \hline
+  Shreysh Verma & 2021EE30742 & Member & 1 \\
+  \hline
+  Kashish Kumawat & 2021EE30739 & Member & 1 \\
+  \hline
+  Anjali Pande & 2021EE30737 & Member & 1 \\
+  \hline
+  Aaradhya Singh & 2021EE30736 & Member & 1 \\
+  \hline
+  Ishav Singla & 2021MT10889 & Member & 1 \\
+  \hline
+  Gajendra Meena & 2021EE30750 & Member & 1 \\
+  \hline
+  Yogendra Kumar & 2021EE10170 & Member & 1 \\
+  \hline
+  Vishal Gupta & 2021MT60955 & Member & 1 \\
+  \hline
+  Srijan Singh & 2021EE10675 & Member & 1 \\
+  \hline
+  Nandini Singh & 2021EE30747 & Member & 1 \\
+  \hline
+  Himanshu Bilkhiwal & 2021EE30728 & Member & 1 \\
+  \hline
+  Harshit Gupta & 2021EE30722 & Member & 1 \\
+  \hline
+  Amitesh Gupta & 2021EE30724 & Member & 1 \\
+  \hline
+  Nishant Yadav & 2021MT10911 & Member & 1 \\
+  \hline
+  Aman Yadav & 2021EE30734 & Member & 1 \\
+  \hline
+  Tarush Rajawat & 2021EE30708 & Member & 1 \\
+  \hline
+\caption{Team Members Information}
+\end{longtable}
+\newpage
+
+\section{Requirements}
+\subsection{Problem Statement}
+\begin{center}
+    \textbf{``To design a cloth cleaning machine to wash dry uncolored cotton cloth post-manufacturing''-This needs to be bulky}
+\end{center}
+
+\subsection{Input Requirements}
+\subsubsection{Cloth Details}
+\begin{itemize}
+    \item[$\scriptstyle\circ$] The cloth being cleaned is just-manufactured, uncolored cotton cloth, for general usage. The thickness is 1-ply, with a thread count of 400, and of denier 60 opaqueness.
+    \item[$\scriptstyle\circ$] The dimensions of the cloth to be cleaned is of maximum 10m length and 2m width.
+    \item[$\scriptstyle\circ$] The cloth has mostly oil-based stains to begin with, naturally imbued during the manufacturing process.
+\end{itemize}
+\subsubsection{Other inputs}
+\begin{itemize}
+    \item[$\scriptstyle\circ$] The machine works with pressured water available at an ambient temperature from an overhead tank of capacity 50l on-site.
+    \item[$\scriptstyle\circ$] The machine works with water of $80mg/l$ $CaCO_3$ equivalent hardness.
+    \item[$\scriptstyle\circ$] Expendable materials like Detergents, soaps,etc are to be treated as a running cost, and paid for by the client after installation.
+\end{itemize}
+\subsubsection{Mode of Input}
+\begin{itemize}
+    \item[$\scriptstyle\circ$] The machine cleans in batches of 11 Kg dry weight per batch
+    \item[$\scriptstyle\circ$] Only a single program for general washing is required
+\end{itemize}
+
+\subsection{Output Requirements}
+\begin{itemize}
+    \item[$\scriptstyle\circ$] The machine is required to both wash and dry the cloth.
+    \item[$\scriptstyle\circ$] The machine is required to have the capability to sequentially process multiple batches prepared beforehand by the client.
+\end{itemize}
+\subsection{Power Requirements}
+\begin{itemize}
+    \item[$\scriptstyle\circ$] The machine must be compatible with 220V AC 1-$\Phi$ (desirable) and 44V AC 3-$\Phi$ Power drawing a maximum current of 15A.
+    \item[$\scriptstyle\circ$] The machine must be able to be connected to plug points upto 20m away.
+\end{itemize}
+\subsection{Logistical Requirements}
+\subsection{Environmental Requirements}
+\begin{itemize}
+    \item[$\scriptstyle\circ$] The machine must use as low an amount of resources(water, electricity) as possible, and comply with CPCB Regulations.
+\end{itemize}
+\subsection{Site-Demanded Requirements}
+\begin{itemize}
+    \item[$\scriptstyle\circ$] The machine is designed to be used at Semi-industrial sites.
+    \item[$\scriptstyle\circ$] The machine must produce a maximum noise intensity of 70dB.
+    \item[$\scriptstyle\circ$] It is desirable but not essential that The machine be dis-assembleable and re-installable on request.
+\end{itemize}
+\subsection{Structural Requirements}
+\begin{itemize}
+    \item[$\scriptstyle\circ$] The machine must be of maximum dimensions 25mx40mx60m, designed to be installed in an industrial-size shed.
+\end{itemize}
+\subsection{Time Requirements}
+\subsubsection{Design Time Requirements}
+    \begin{itemize}
+        \item[$\scriptstyle\circ$] The maximum time to wash a batch must be under 45 minutes.
+    \end{itemize}
+\subsubsection{Time to Market Requirements}
+\subsubsection{Life Time Requirements}
+\subsubsection{End of Life Requirements}
+\subsection{Miscellaneous Requirements}
+% \section{Appendices}
+% \subsection{Document Statistics}
+% \subsubsection{Text Statistics}
+% \subsubsection{List of Tables}
+% \subsubsection{List of Figures}
+% \subsubsection{Document Readability}
+% \subsubsection{GANTT Chart}
+
+\end{document}
+% s
