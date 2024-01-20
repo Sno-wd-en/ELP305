@@ -1,0 +1,27 @@
+\babel@toc {english}{}\relax 
+\contentsline {section}{\numberline {1}Tribe Members Information}{3}{section.1}%
+\contentsline {section}{\numberline {2}Mind Map}{6}{section.2}%
+\contentsline {section}{\numberline {3}Project Management Details}{7}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Gantt Chart}{7}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Network Chart}{7}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}RBS}{8}{subsection.3.3}%
+\contentsline {subsection}{\numberline {3.4}WBS}{8}{subsection.3.4}%
+\contentsline {section}{\numberline {4}Abstract}{9}{section.4}%
+\contentsline {section}{\numberline {5}Motivation}{9}{section.5}%
+\contentsline {section}{\numberline {6}Requirements}{9}{section.6}%
+\contentsline {subsection}{\numberline {6.1}Problem Statement}{9}{subsection.6.1}%
+\contentsline {subsection}{\numberline {6.2}Input Requirements}{9}{subsection.6.2}%
+\contentsline {subsubsection}{\numberline {6.2.1}Cloth Details}{9}{subsubsection.6.2.1}%
+\contentsline {subsubsection}{\numberline {6.2.2}Other inputs}{10}{subsubsection.6.2.2}%
+\contentsline {subsubsection}{\numberline {6.2.3}Mode of Input}{10}{subsubsection.6.2.3}%
+\contentsline {subsection}{\numberline {6.3}Output Requirements}{10}{subsection.6.3}%
+\contentsline {subsection}{\numberline {6.4}Power Requirements}{10}{subsection.6.4}%
+\contentsline {subsection}{\numberline {6.5}Environmental Requirements}{10}{subsection.6.5}%
+\contentsline {subsection}{\numberline {6.6}Site-Demanded Requirements}{10}{subsection.6.6}%
+\contentsline {subsection}{\numberline {6.7}Structural Requirements}{10}{subsection.6.7}%
+\contentsline {subsection}{\numberline {6.8}Time Requirements}{11}{subsection.6.8}%
+\contentsline {subsubsection}{\numberline {6.8.1}Operational Time}{11}{subsubsection.6.8.1}%
+\contentsline {section}{\numberline {A}Appendix}{12}{appendix.A}%
+\contentsline {subsection}{\numberline {A.1}Document ID}{12}{subsection.A.1}%
+\contentsline {subsection}{\numberline {A.2}Document Statistics}{12}{subsection.A.2}%
+\contentsline {subsection}{\numberline {A.3}Readability Indices}{12}{subsection.A.3}%

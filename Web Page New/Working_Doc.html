@@ -1,0 +1,1428 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"  
+  "http://www.w3.org/TR/html4/loose.dtd">  
+<html > 
+<head><title></title> 
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+<meta name="generator" content="TeX4ht (https://tug.org/tex4ht/)"> 
+<meta name="originator" content="TeX4ht (https://tug.org/tex4ht/)"> 
+<!-- html --> 
+<meta name="src" content="Working_Doc.tex"> 
+<link rel="stylesheet" type="text/css" href="Working_Doc.css"> 
+</head><body 
+>
+<div class="center" 
+>
+<!--l. 38--><p class="noindent" >
+<!--l. 40--><p class="noindent" >_______________________________________________________________________________________
+<div class="center" 
+>
+<!--l. 42--><p class="noindent" >
+<!--l. 43--><p class="noindent" ><img 
+src="Images/iitd_logo.png" alt="PIC"  
+></div>
+<!--l. 46--><p class="noindent" ><span 
+class="cmbx-12x-x-207">DESIGN OF SYSTEMS LAB</span><br />
+<span 
+class="cmbxti-10x-x-248">Prof. Subrat Kar </span><span 
+class="cmbx-12x-x-207">[ELP305] </span><hr class="figure"><div class="figure" 
+>
+<!--l. 52--><p class="noindent" ></div><hr class="endfigure">
+<!--l. 54--><p class="noindent" ><span 
+class="cmbx-12x-x-207">Cloth Cleaning Machine Requirements</span>
+<span 
+class="cmbx-12x-x-207">Document</span><br />
+<span 
+class="cmbx-12x-x-172">(Version 1.0)</span><br />
+<span 
+class="cmbx-12x-x-172">Submission by Tribe - E</span><br />
+<span 
+class="cmbx-12x-x-172">January 21, 2024</span><br />
+</div>
+<!--l. 62--><p class="noindent" >
+                                                                                      
+                                                                                      
+   <h3 class="likesectionHead"><a 
+ id="x1-1000"></a>Contents</h3>
+   <div class="tableofcontents">
+   &#x00A0;<span class="sectionToc" >1 <a 
+href="#x1-20001" id="QQ2-1-2">Tribe Members Information</a></span>
+<br />   &#x00A0;<span class="sectionToc" >2 <a 
+href="#x1-50002" id="QQ2-1-6">Mind Map</a></span>
+<br />   &#x00A0;<span class="sectionToc" >3 <a 
+href="#x1-60003" id="QQ2-1-8">Project Management Details</a></span>
+<br />   &#x00A0;&#x00A0;<span class="subsectionToc" >3.1 <a 
+href="#x1-70003.1" id="QQ2-1-9">Gantt Chart</a></span>
+<br />   &#x00A0;&#x00A0;<span class="subsectionToc" >3.2 <a 
+href="#x1-80003.2" id="QQ2-1-11">Network Chart</a></span>
+<br />   &#x00A0;&#x00A0;<span class="subsectionToc" >3.3 <a 
+href="#x1-90003.3" id="QQ2-1-13">RBS</a></span>
+<br />   &#x00A0;&#x00A0;<span class="subsectionToc" >3.4 <a 
+href="#x1-100003.4" id="QQ2-1-15">WBS</a></span>
+<br />   &#x00A0;<span class="sectionToc" >4 <a 
+href="#x1-110004" id="QQ2-1-17">Abstract</a></span>
+<br />   &#x00A0;<span class="sectionToc" >5 <a 
+href="#x1-120005" id="QQ2-1-18">Motivation</a></span>
+<br />   &#x00A0;<span class="sectionToc" >6 <a 
+href="#x1-130006" id="QQ2-1-19">Requirements</a></span>
+<br />   &#x00A0;&#x00A0;<span class="subsectionToc" >6.1 <a 
+href="#x1-140006.1" id="QQ2-1-20">Problem Statement</a></span>
+<br />   &#x00A0;&#x00A0;<span class="subsectionToc" >6.2 <a 
+href="#x1-150006.2" id="QQ2-1-21">Input Requirements</a></span>
+<br />   &#x00A0;&#x00A0;&#x00A0;<span class="subsubsectionToc" >6.2.1 <a 
+href="#x1-160006.2.1" id="QQ2-1-22">Cloth Details</a></span>
+<br />   &#x00A0;&#x00A0;&#x00A0;<span class="subsubsectionToc" >6.2.2 <a 
+href="#x1-170006.2.2" id="QQ2-1-23">Other inputs</a></span>
+<br />   &#x00A0;&#x00A0;&#x00A0;<span class="subsubsectionToc" >6.2.3 <a 
+href="#x1-180006.2.3" id="QQ2-1-24">Mode of Input</a></span>
+<br />   &#x00A0;&#x00A0;<span class="subsectionToc" >6.3 <a 
+href="#x1-190006.3" id="QQ2-1-25">Output Requirements</a></span>
+<br />   &#x00A0;&#x00A0;<span class="subsectionToc" >6.4 <a 
+href="#x1-200006.4" id="QQ2-1-26">Power Requirements</a></span>
+<br />   &#x00A0;&#x00A0;<span class="subsectionToc" >6.5 <a 
+href="#x1-210006.5" id="QQ2-1-27">Environmental Requirements</a></span>
+<br />   &#x00A0;&#x00A0;<span class="subsectionToc" >6.6 <a 
+href="#x1-220006.6" id="QQ2-1-28">Site-Demanded Requirements</a></span>
+<br />   &#x00A0;&#x00A0;<span class="subsectionToc" >6.7 <a 
+href="#x1-230006.7" id="QQ2-1-29">Structural Requirements</a></span>
+<br />   &#x00A0;&#x00A0;<span class="subsectionToc" >6.8 <a 
+href="#x1-240006.8" id="QQ2-1-30">Time Requirements</a></span>
+<br />   &#x00A0;&#x00A0;&#x00A0;<span class="subsubsectionToc" >6.8.1 <a 
+href="#x1-250006.8.1" id="QQ2-1-31">Operational Time</a></span>
+<br />   &#x00A0;<span class="sectionToc" >A <a 
+href="#x1-26000A" id="QQ2-1-32">Appendix</a></span>
+<br />   &#x00A0;&#x00A0;<span class="subsectionToc" >A.1 <a 
+href="#x1-27000A.1" id="QQ2-1-33">Document ID</a></span>
+<br />   &#x00A0;&#x00A0;<span class="subsectionToc" >A.2 <a 
+href="#x1-28000A.2" id="QQ2-1-34">Document Statistics</a></span>
+<br />   &#x00A0;&#x00A0;<span class="subsectionToc" >A.3 <a 
+href="#x1-29000A.3" id="QQ2-1-35">Readability Indices</a></span>
+   </div>
+                                                                                      
+                                                                                      
+   <h3 class="sectionHead"><span class="titlemark">1   </span> <a 
+ id="x1-20001"></a>Tribe Members Information</h3>
+<!--l. 3--><p class="noindent" >
+<a 
+ id="x1-2001r1"></a>
+   <!--l. 5--><div class="longtable"> <table id="TBL-1" class="longtable" 
+ 
+><colgroup id="TBL-1-1g"><col 
+id="TBL-1-1"></colgroup><colgroup id="TBL-1-2g"><col 
+id="TBL-1-2"></colgroup><colgroup id="TBL-1-3g"><col 
+id="TBL-1-3"></colgroup><colgroup id="TBL-1-4g"><col 
+id="TBL-1-4"></colgroup><colgroup id="TBL-1-5g"><col 
+id="TBL-1-5"></colgroup>
+                                                                                      
+                                                                                      
+<tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-1-1-"><td  style="white-space:normal; text-align:left;" id="TBL-1-1-1"  
+class="td11">
+ <!--l. 5--><p class="noindent" ><span 
+class="cmbx-12">S.No.</span>  </td><td  style="white-space:normal; text-align:left;" id="TBL-1-1-2"  
+class="td11">
+ <!--l. 5--><p class="noindent" ><span 
+class="cmbx-12">Name</span>                      </td><td  style="white-space:normal; text-align:left;" id="TBL-1-1-3"  
+class="td11">
+ <!--l. 5--><p class="noindent" ><span 
+class="cmbx-12">Email</span>                  </td><td  style="white-space:normal; text-align:left;" id="TBL-1-1-4"  
+class="td11">
+ <!--l. 5--><p class="noindent" ><span 
+class="cmbx-12">Role</span>                     </td><td  style="white-space:normal; text-align:left;" id="TBL-1-1-5"  
+class="td11">
+ <!--l. 5--><p class="noindent" ><span 
+class="cmbx-12">IF</span>   </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-1-2-"><td  style="white-space:normal; text-align:left;" id="TBL-1-2-1"  
+class="td11">
+ <!--l. 7--><p class="noindent" >       </td>
+</tr><tr  
+ style="vertical-align:baseline;" id="TBL-1-3-"><td  style="white-space:normal; text-align:left;" id="TBL-1-3-1"  
+class="td11">         </td><td  style="white-space:normal; text-align:left;" id="TBL-1-3-2"  
+class="td11">                           </td><td  style="white-space:normal; text-align:left;" id="TBL-1-3-3"  
+class="td11">                       </td><td  style="white-space:normal; text-align:left;" id="TBL-1-3-4"  
+class="td11">                        </td><td  style="white-space:normal; text-align:left;" id="TBL-1-3-5"  
+class="td11"></td></tr>
+<tr  
+ style="vertical-align:baseline;" id="TBL-1-10-"><td  style="white-space:normal; text-align:left;" id="TBL-1-10-1"  
+class="td11">
+ <!--l. 21--><p class="noindent" >1         </td><td  style="white-space:normal; text-align:left;" id="TBL-1-10-2"  
+class="td11">
+ <!--l. 21--><p class="noindent" >Samarth Singla              </td><td  style="white-space:normal; text-align:left;" id="TBL-1-10-3"  
+class="td11">
+ <!--l. 21--><p class="noindent" >mt6210942@iitd.ac.in </td><td  style="white-space:normal; text-align:left;" id="TBL-1-10-4"  
+class="td11">
+ <!--l. 21--><p class="noindent" >Tribe Coordinator       </td><td  style="white-space:normal; text-align:left;" id="TBL-1-10-5"  
+class="td11">
+ <!--l. 21--><p class="noindent" >1     </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-1-11-"><td  style="white-space:normal; text-align:left;" id="TBL-1-11-1"  
+class="td11">
+ <!--l. 22--><p class="noindent" >2         </td><td  style="white-space:normal; text-align:left;" id="TBL-1-11-2"  
+class="td11">
+ <!--l. 22--><p class="noindent" >Tarun Gupta                 </td><td  style="white-space:normal; text-align:left;" id="TBL-1-11-3"  
+class="td11">
+ <!--l. 22--><p class="noindent" >ee3210482@iitd.ac.in  </td><td  style="white-space:normal; text-align:left;" id="TBL-1-11-4"  
+class="td11">
+ <!--l. 22--><p class="noindent" >Associate Tribe
+  Coordinator               </td><td  style="white-space:normal; text-align:left;" id="TBL-1-11-5"  
+class="td11">
+ <!--l. 22--><p class="noindent" >1     </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-1-12-"><td  style="white-space:normal; text-align:left;" id="TBL-1-12-1"  
+class="td11">
+ <!--l. 23--><p class="noindent" >3         </td><td  style="white-space:normal; text-align:left;" id="TBL-1-12-2"  
+class="td11">
+ <!--l. 23--><p class="noindent" >Mihit Sharma                </td><td  style="white-space:normal; text-align:left;" id="TBL-1-12-3"  
+class="td11">
+ <!--l. 23--><p class="noindent" >ee3210707@iitd.ac.in  </td><td  style="white-space:normal; text-align:left;" id="TBL-1-12-4"  
+class="td11">
+ <!--l. 23--><p class="noindent" >Associate Tribe
+  Coordinator               </td><td  style="white-space:normal; text-align:left;" id="TBL-1-12-5"  
+class="td11">
+ <!--l. 23--><p class="noindent" >1     </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-1-13-"><td  style="white-space:normal; text-align:left;" id="TBL-1-13-1"  
+class="td11">
+ <!--l. 24--><p class="noindent" >4         </td><td  style="white-space:normal; text-align:left;" id="TBL-1-13-2"  
+class="td11">
+ <!--l. 24--><p class="noindent" >Akshat Chaudhary         </td><td  style="white-space:normal; text-align:left;" id="TBL-1-13-3"  
+class="td11">
+ <!--l. 24--><p class="noindent" >mt6210814@iitd.ac.in </td><td  style="white-space:normal; text-align:left;" id="TBL-1-13-4"  
+class="td11">
+ <!--l. 24--><p class="noindent" >Activity Coordinator   </td><td  style="white-space:normal; text-align:left;" id="TBL-1-13-5"  
+class="td11">
+ <!--l. 24--><p class="noindent" >1     </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-1-14-"><td  style="white-space:normal; text-align:left;" id="TBL-1-14-1"  
+class="td11">
+ <!--l. 25--><p class="noindent" >5         </td><td  style="white-space:normal; text-align:left;" id="TBL-1-14-2"  
+class="td11">
+ <!--l. 25--><p class="noindent" >Ronak Kalvani               </td><td  style="white-space:normal; text-align:left;" id="TBL-1-14-3"  
+class="td11">
+ <!--l. 25--><p class="noindent" >mt6210952@iitd.ac.in </td><td  style="white-space:normal; text-align:left;" id="TBL-1-14-4"  
+class="td11">
+ <!--l. 25--><p class="noindent" >Member                    </td><td  style="white-space:normal; text-align:left;" id="TBL-1-14-5"  
+class="td11">
+ <!--l. 25--><p class="noindent" >1     </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-1-15-"><td  style="white-space:normal; text-align:left;" id="TBL-1-15-1"  
+class="td11">
+ <!--l. 26--><p class="noindent" >6         </td><td  style="white-space:normal; text-align:left;" id="TBL-1-15-2"  
+class="td11">
+ <!--l. 26--><p class="noindent" >Shailesh Saini                </td><td  style="white-space:normal; text-align:left;" id="TBL-1-15-3"  
+class="td11">
+ <!--l. 26--><p class="noindent" >mt1210925@iitd.ac.in </td><td  style="white-space:normal; text-align:left;" id="TBL-1-15-4"  
+class="td11">
+ <!--l. 26--><p class="noindent" >Member                    </td><td  style="white-space:normal; text-align:left;" id="TBL-1-15-5"  
+class="td11">
+ <!--l. 26--><p class="noindent" >1     </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-1-16-"><td  style="white-space:normal; text-align:left;" id="TBL-1-16-1"  
+class="td11">
+ <!--l. 27--><p class="noindent" >7         </td><td  style="white-space:normal; text-align:left;" id="TBL-1-16-2"  
+class="td11">
+ <!--l. 27--><p class="noindent" >Abhirashi Singh             </td><td  style="white-space:normal; text-align:left;" id="TBL-1-16-3"  
+class="td11">
+ <!--l. 27--><p class="noindent" >ee1210646@iitd.ac.in  </td><td  style="white-space:normal; text-align:left;" id="TBL-1-16-4"  
+class="td11">
+ <!--l. 27--><p class="noindent" >Member                    </td><td  style="white-space:normal; text-align:left;" id="TBL-1-16-5"  
+class="td11">
+ <!--l. 27--><p class="noindent" >1     </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-1-17-"><td  style="white-space:normal; text-align:left;" id="TBL-1-17-1"  
+class="td11">
+ <!--l. 28--><p class="noindent" >8         </td><td  style="white-space:normal; text-align:left;" id="TBL-1-17-2"  
+class="td11">
+ <!--l. 28--><p class="noindent" >Himanshi Barsker           </td><td  style="white-space:normal; text-align:left;" id="TBL-1-17-3"  
+class="td11">
+ <!--l. 28--><p class="noindent" >mt1210929@iitd.ac.in </td><td  style="white-space:normal; text-align:left;" id="TBL-1-17-4"  
+class="td11">
+ <!--l. 28--><p class="noindent" >Member                    </td><td  style="white-space:normal; text-align:left;" id="TBL-1-17-5"  
+class="td11">
+ <!--l. 28--><p class="noindent" >1     </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-1-18-"><td  style="white-space:normal; text-align:left;" id="TBL-1-18-1"  
+class="td11">
+ <!--l. 29--><p class="noindent" >9         </td><td  style="white-space:normal; text-align:left;" id="TBL-1-18-2"  
+class="td11">
+ <!--l. 29--><p class="noindent" >Aditya Raj                    </td><td  style="white-space:normal; text-align:left;" id="TBL-1-18-3"  
+class="td11">
+ <!--l. 29--><p class="noindent" >mt1210262@iitd.ac.in </td><td  style="white-space:normal; text-align:left;" id="TBL-1-18-4"  
+class="td11">
+ <!--l. 29--><p class="noindent" >Member                    </td><td  style="white-space:normal; text-align:left;" id="TBL-1-18-5"  
+class="td11">
+ <!--l. 29--><p class="noindent" >1     </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-1-19-"><td  style="white-space:normal; text-align:left;" id="TBL-1-19-1"  
+class="td11">
+ <!--l. 30--><p class="noindent" >10        </td><td  style="white-space:normal; text-align:left;" id="TBL-1-19-2"  
+class="td11">
+ <!--l. 30--><p class="noindent" >Surya Pratap Singh        </td><td  style="white-space:normal; text-align:left;" id="TBL-1-19-3"  
+class="td11">
+ <!--l. 30--><p class="noindent" >mt1210248@iitd.ac.in </td><td  style="white-space:normal; text-align:left;" id="TBL-1-19-4"  
+class="td11">
+ <!--l. 30--><p class="noindent" >Member                    </td><td  style="white-space:normal; text-align:left;" id="TBL-1-19-5"  
+class="td11">
+ <!--l. 30--><p class="noindent" >1     </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-1-20-"><td  style="white-space:normal; text-align:left;" id="TBL-1-20-1"  
+class="td11">
+ <!--l. 32--><p class="noindent" >11        </td><td  style="white-space:normal; text-align:left;" id="TBL-1-20-2"  
+class="td11">
+ <!--l. 32--><p class="noindent" >Komal Gumma              </td><td  style="white-space:normal; text-align:left;" id="TBL-1-20-3"  
+class="td11">
+ <!--l. 32--><p class="noindent" >ee1210677@iitd.ac.in  </td><td  style="white-space:normal; text-align:left;" id="TBL-1-20-4"  
+class="td11">
+ <!--l. 32--><p class="noindent" >Member                    </td><td  style="white-space:normal; text-align:left;" id="TBL-1-20-5"  
+class="td11">
+ <!--l. 32--><p class="noindent" >1     </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-1-21-"><td  style="white-space:normal; text-align:left;" id="TBL-1-21-1"  
+class="td11">
+ <!--l. 33--><p class="noindent" >12        </td><td  style="white-space:normal; text-align:left;" id="TBL-1-21-2"  
+class="td11">
+ <!--l. 33--><p class="noindent" >Rashmi                        </td><td  style="white-space:normal; text-align:left;" id="TBL-1-21-3"  
+class="td11">
+ <!--l. 33--><p class="noindent" >mt1210934@iitd.ac.in </td><td  style="white-space:normal; text-align:left;" id="TBL-1-21-4"  
+class="td11">
+ <!--l. 33--><p class="noindent" >Member                    </td><td  style="white-space:normal; text-align:left;" id="TBL-1-21-5"  
+class="td11">
+ <!--l. 33--><p class="noindent" >1     </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-1-22-"><td  style="white-space:normal; text-align:left;" id="TBL-1-22-1"  
+class="td11">
+ <!--l. 34--><p class="noindent" >13        </td><td  style="white-space:normal; text-align:left;" id="TBL-1-22-2"  
+class="td11">
+ <!--l. 34--><p class="noindent" >Madhav Manish Gulati    </td><td  style="white-space:normal; text-align:left;" id="TBL-1-22-3"  
+class="td11">
+ <!--l. 34--><p class="noindent" >ee1210139@iitd.ac.in  </td><td  style="white-space:normal; text-align:left;" id="TBL-1-22-4"  
+class="td11">
+ <!--l. 34--><p class="noindent" >Activity Coordinator   </td><td  style="white-space:normal; text-align:left;" id="TBL-1-22-5"  
+class="td11">
+ <!--l. 34--><p class="noindent" >1     </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-1-23-"><td  style="white-space:normal; text-align:left;" id="TBL-1-23-1"  
+class="td11">
+ <!--l. 35--><p class="noindent" >14        </td><td  style="white-space:normal; text-align:left;" id="TBL-1-23-2"  
+class="td11">
+ <!--l. 35--><p class="noindent" >Nihar Patel                   </td><td  style="white-space:normal; text-align:left;" id="TBL-1-23-3"  
+class="td11">
+ <!--l. 35--><p class="noindent" >mt1210890@iitd.ac.in </td><td  style="white-space:normal; text-align:left;" id="TBL-1-23-4"  
+class="td11">
+ <!--l. 35--><p class="noindent" >Member                    </td><td  style="white-space:normal; text-align:left;" id="TBL-1-23-5"  
+class="td11">
+ <!--l. 35--><p class="noindent" >1     </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-1-24-"><td  style="white-space:normal; text-align:left;" id="TBL-1-24-1"  
+class="td11">
+ <!--l. 36--><p class="noindent" >15        </td><td  style="white-space:normal; text-align:left;" id="TBL-1-24-2"  
+class="td11">
+ <!--l. 36--><p class="noindent" >Jamith Kaur                 </td><td  style="white-space:normal; text-align:left;" id="TBL-1-24-3"  
+class="td11">
+ <!--l. 36--><p class="noindent" >mt6210951@iitd.ac.in </td><td  style="white-space:normal; text-align:left;" id="TBL-1-24-4"  
+class="td11">
+ <!--l. 36--><p class="noindent" >Member                    </td><td  style="white-space:normal; text-align:left;" id="TBL-1-24-5"  
+class="td11">
+ <!--l. 36--><p class="noindent" >1     </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-1-25-"><td  style="white-space:normal; text-align:left;" id="TBL-1-25-1"  
+class="td11">
+ <!--l. 37--><p class="noindent" >16        </td><td  style="white-space:normal; text-align:left;" id="TBL-1-25-2"  
+class="td11">
+ <!--l. 37--><p class="noindent" >Saket Kandoi                 </td><td  style="white-space:normal; text-align:left;" id="TBL-1-25-3"  
+class="td11">
+ <!--l. 37--><p class="noindent" >mt6210265@iitd.ac.in </td><td  style="white-space:normal; text-align:left;" id="TBL-1-25-4"  
+class="td11">
+ <!--l. 37--><p class="noindent" >Member                    </td><td  style="white-space:normal; text-align:left;" id="TBL-1-25-5"  
+class="td11">
+ <!--l. 37--><p class="noindent" >1     </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-1-26-"><td  style="white-space:normal; text-align:left;" id="TBL-1-26-1"  
+class="td11">
+ <!--l. 38--><p class="noindent" >17        </td><td  style="white-space:normal; text-align:left;" id="TBL-1-26-2"  
+class="td11">
+ <!--l. 38--><p class="noindent" >Yash Sajjansingh
+  Chavan                        </td><td  style="white-space:normal; text-align:left;" id="TBL-1-26-3"  
+class="td11">
+ <!--l. 38--><p class="noindent" >mt6210966@iitd.ac.in </td><td  style="white-space:normal; text-align:left;" id="TBL-1-26-4"  
+class="td11">
+ <!--l. 38--><p class="noindent" >Member                    </td><td  style="white-space:normal; text-align:left;" id="TBL-1-26-5"  
+class="td11">
+ <!--l. 38--><p class="noindent" >1     </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-1-27-"><td  style="white-space:normal; text-align:left;" id="TBL-1-27-1"  
+class="td11">
+ <!--l. 39--><p class="noindent" >18        </td><td  style="white-space:normal; text-align:left;" id="TBL-1-27-2"  
+class="td11">
+ <!--l. 39--><p class="noindent" >Aniruddha Chatterjee     </td><td  style="white-space:normal; text-align:left;" id="TBL-1-27-3"  
+class="td11">
+ <!--l. 39--><p class="noindent" >mt1210896@iitd.ac.in </td><td  style="white-space:normal; text-align:left;" id="TBL-1-27-4"  
+class="td11">
+ <!--l. 39--><p class="noindent" >Member                    </td><td  style="white-space:normal; text-align:left;" id="TBL-1-27-5"  
+class="td11">
+ <!--l. 39--><p class="noindent" >1     </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-1-28-"><td  style="white-space:normal; text-align:left;" id="TBL-1-28-1"  
+class="td11">
+ <!--l. 40--><p class="noindent" >19        </td><td  style="white-space:normal; text-align:left;" id="TBL-1-28-2"  
+class="td11">
+ <!--l. 40--><p class="noindent" >Dipshika Karmalkar        </td><td  style="white-space:normal; text-align:left;" id="TBL-1-28-3"  
+class="td11">
+ <!--l. 40--><p class="noindent" >ee3210753@iitd.ac.in  </td><td  style="white-space:normal; text-align:left;" id="TBL-1-28-4"  
+class="td11">
+ <!--l. 40--><p class="noindent" >Member                    </td><td  style="white-space:normal; text-align:left;" id="TBL-1-28-5"  
+class="td11">
+ <!--l. 40--><p class="noindent" >1     </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-1-29-"><td  style="white-space:normal; text-align:left;" id="TBL-1-29-1"  
+class="td11">
+ <!--l. 41--><p class="noindent" >20        </td><td  style="white-space:normal; text-align:left;" id="TBL-1-29-2"  
+class="td11">
+ <!--l. 41--><p class="noindent" >Ananmay Gupta            </td><td  style="white-space:normal; text-align:left;" id="TBL-1-29-3"  
+class="td11">
+ <!--l. 41--><p class="noindent" >mt1210894@iitd.ac.in </td><td  style="white-space:normal; text-align:left;" id="TBL-1-29-4"  
+class="td11">
+ <!--l. 41--><p class="noindent" >Member                    </td><td  style="white-space:normal; text-align:left;" id="TBL-1-29-5"  
+class="td11">
+ <!--l. 41--><p class="noindent" >1     </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-1-30-"><td  style="white-space:normal; text-align:left;" id="TBL-1-30-1"  
+class="td11">
+ <!--l. 42--><p class="noindent" >21        </td><td  style="white-space:normal; text-align:left;" id="TBL-1-30-2"  
+class="td11">
+ <!--l. 42--><p class="noindent" >Abhishek Kumar            </td><td  style="white-space:normal; text-align:left;" id="TBL-1-30-3"  
+class="td11">
+ <!--l. 42--><p class="noindent" >mt6210957@iitd.ac.in </td><td  style="white-space:normal; text-align:left;" id="TBL-1-30-4"  
+class="td11">
+ <!--l. 42--><p class="noindent" >Member                    </td><td  style="white-space:normal; text-align:left;" id="TBL-1-30-5"  
+class="td11">
+ <!--l. 42--><p class="noindent" >1     </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-1-31-"><td  style="white-space:normal; text-align:left;" id="TBL-1-31-1"  
+class="td11">
+ <!--l. 43--><p class="noindent" >22        </td><td  style="white-space:normal; text-align:left;" id="TBL-1-31-2"  
+class="td11">
+ <!--l. 43--><p class="noindent" >M Bhavya                     </td><td  style="white-space:normal; text-align:left;" id="TBL-1-31-3"  
+class="td11">
+ <!--l. 43--><p class="noindent" >ee1210648@iitd.ac.in  </td><td  style="white-space:normal; text-align:left;" id="TBL-1-31-4"  
+class="td11">
+ <!--l. 43--><p class="noindent" >Member                    </td><td  style="white-space:normal; text-align:left;" id="TBL-1-31-5"  
+class="td11">
+ <!--l. 43--><p class="noindent" >1     </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-1-32-"><td  style="white-space:normal; text-align:left;" id="TBL-1-32-1"  
+class="td11">
+ <!--l. 44--><p class="noindent" >23        </td><td  style="white-space:normal; text-align:left;" id="TBL-1-32-2"  
+class="td11">
+ <!--l. 44--><p class="noindent" >Satwik Kumar               </td><td  style="white-space:normal; text-align:left;" id="TBL-1-32-3"  
+class="td11">
+ <!--l. 44--><p class="noindent" >mt1210740@iitd.ac.in </td><td  style="white-space:normal; text-align:left;" id="TBL-1-32-4"  
+class="td11">
+ <!--l. 44--><p class="noindent" >Member                    </td><td  style="white-space:normal; text-align:left;" id="TBL-1-32-5"  
+class="td11">
+ <!--l. 44--><p class="noindent" >1     </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-1-33-"><td  style="white-space:normal; text-align:left;" id="TBL-1-33-1"  
+class="td11">
+ <!--l. 45--><p class="noindent" >24        </td><td  style="white-space:normal; text-align:left;" id="TBL-1-33-2"  
+class="td11">
+ <!--l. 45--><p class="noindent" >Ankit Mukherjee            </td><td  style="white-space:normal; text-align:left;" id="TBL-1-33-3"  
+class="td11">
+ <!--l. 45--><p class="noindent" >ee3210209@iitd.ac.in  </td><td  style="white-space:normal; text-align:left;" id="TBL-1-33-4"  
+class="td11">
+ <!--l. 45--><p class="noindent" >Member                    </td><td  style="white-space:normal; text-align:left;" id="TBL-1-33-5"  
+class="td11">
+ <!--l. 45--><p class="noindent" >1     </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-1-34-"><td  style="white-space:normal; text-align:left;" id="TBL-1-34-1"  
+class="td11">
+ <!--l. 46--><p class="noindent" >25        </td><td  style="white-space:normal; text-align:left;" id="TBL-1-34-2"  
+class="td11">
+ <!--l. 46--><p class="noindent" >Shashank Mahawar         </td><td  style="white-space:normal; text-align:left;" id="TBL-1-34-3"  
+class="td11">
+ <!--l. 46--><p class="noindent" >ee1211108@iitd.ac.in  </td><td  style="white-space:normal; text-align:left;" id="TBL-1-34-4"  
+class="td11">
+ <!--l. 46--><p class="noindent" >Member                    </td><td  style="white-space:normal; text-align:left;" id="TBL-1-34-5"  
+class="td11">
+ <!--l. 46--><p class="noindent" >1     </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-1-35-"><td  style="white-space:normal; text-align:left;" id="TBL-1-35-1"  
+class="td11">
+ <!--l. 47--><p class="noindent" >26        </td><td  style="white-space:normal; text-align:left;" id="TBL-1-35-2"  
+class="td11">
+ <!--l. 47--><p class="noindent" >Anirban Singha              </td><td  style="white-space:normal; text-align:left;" id="TBL-1-35-3"  
+class="td11">
+ <!--l. 47--><p class="noindent" >ee3210712@iitd.ac.in  </td><td  style="white-space:normal; text-align:left;" id="TBL-1-35-4"  
+class="td11">
+ <!--l. 47--><p class="noindent" >Member                    </td><td  style="white-space:normal; text-align:left;" id="TBL-1-35-5"  
+class="td11">
+ <!--l. 47--><p class="noindent" >1     </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-1-36-"><td  style="white-space:normal; text-align:left;" id="TBL-1-36-1"  
+class="td11">
+ <!--l. 48--><p class="noindent" >27        </td><td  style="white-space:normal; text-align:left;" id="TBL-1-36-2"  
+class="td11">
+ <!--l. 48--><p class="noindent" >Hardik Varshney            </td><td  style="white-space:normal; text-align:left;" id="TBL-1-36-3"  
+class="td11">
+ <!--l. 48--><p class="noindent" >ee1210383@iitd.ac.in  </td><td  style="white-space:normal; text-align:left;" id="TBL-1-36-4"  
+class="td11">
+ <!--l. 48--><p class="noindent" >Activity Coordinator   </td><td  style="white-space:normal; text-align:left;" id="TBL-1-36-5"  
+class="td11">
+ <!--l. 48--><p class="noindent" >1     </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-1-37-"><td  style="white-space:normal; text-align:left;" id="TBL-1-37-1"  
+class="td11">
+ <!--l. 49--><p class="noindent" >28        </td><td  style="white-space:normal; text-align:left;" id="TBL-1-37-2"  
+class="td11">
+ <!--l. 49--><p class="noindent" >Saumya Srivastava          </td><td  style="white-space:normal; text-align:left;" id="TBL-1-37-3"  
+class="td11">
+ <!--l. 49--><p class="noindent" >ee1210644@iitd.ac.in  </td><td  style="white-space:normal; text-align:left;" id="TBL-1-37-4"  
+class="td11">
+ <!--l. 49--><p class="noindent" >Member                    </td><td  style="white-space:normal; text-align:left;" id="TBL-1-37-5"  
+class="td11">
+ <!--l. 49--><p class="noindent" >1     </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-1-38-"><td  style="white-space:normal; text-align:left;" id="TBL-1-38-1"  
+class="td11">
+ <!--l. 50--><p class="noindent" >29        </td><td  style="white-space:normal; text-align:left;" id="TBL-1-38-2"  
+class="td11">
+ <!--l. 50--><p class="noindent" >Siddharth Gupta            </td><td  style="white-space:normal; text-align:left;" id="TBL-1-38-3"  
+class="td11">
+ <!--l. 50--><p class="noindent" >ee1210627@iitd.ac.in  </td><td  style="white-space:normal; text-align:left;" id="TBL-1-38-4"  
+class="td11">
+ <!--l. 50--><p class="noindent" >Member                    </td><td  style="white-space:normal; text-align:left;" id="TBL-1-38-5"  
+class="td11">
+ <!--l. 50--><p class="noindent" >1     </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-1-39-"><td  style="white-space:normal; text-align:left;" id="TBL-1-39-1"  
+class="td11">
+ <!--l. 51--><p class="noindent" >30        </td><td  style="white-space:normal; text-align:left;" id="TBL-1-39-2"  
+class="td11">
+ <!--l. 51--><p class="noindent" >Shreyash Bhilwade         </td><td  style="white-space:normal; text-align:left;" id="TBL-1-39-3"  
+class="td11">
+ <!--l. 51--><p class="noindent" >ee3210178@iitd.ac.in  </td><td  style="white-space:normal; text-align:left;" id="TBL-1-39-4"  
+class="td11">
+ <!--l. 51--><p class="noindent" >Member                    </td><td  style="white-space:normal; text-align:left;" id="TBL-1-39-5"  
+class="td11">
+ <!--l. 51--><p class="noindent" >1     </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-1-40-"><td  style="white-space:normal; text-align:left;" id="TBL-1-40-1"  
+class="td11">
+ <!--l. 52--><p class="noindent" >31        </td><td  style="white-space:normal; text-align:left;" id="TBL-1-40-2"  
+class="td11">
+ <!--l. 52--><p class="noindent" >Sumit Sharma               </td><td  style="white-space:normal; text-align:left;" id="TBL-1-40-3"  
+class="td11">
+ <!--l. 52--><p class="noindent" >mt1210264@iitd.ac.in </td><td  style="white-space:normal; text-align:left;" id="TBL-1-40-4"  
+class="td11">
+ <!--l. 52--><p class="noindent" >Member                    </td><td  style="white-space:normal; text-align:left;" id="TBL-1-40-5"  
+class="td11">
+ <!--l. 52--><p class="noindent" >1     </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-1-41-"><td  style="white-space:normal; text-align:left;" id="TBL-1-41-1"  
+class="td11">
+ <!--l. 53--><p class="noindent" >32        </td><td  style="white-space:normal; text-align:left;" id="TBL-1-41-2"  
+class="td11">
+ <!--l. 53--><p class="noindent" >Shreyansh Jain              </td><td  style="white-space:normal; text-align:left;" id="TBL-1-41-3"  
+class="td11">
+ <!--l. 53--><p class="noindent" >ee1210627@iitd.ac.in  </td><td  style="white-space:normal; text-align:left;" id="TBL-1-41-4"  
+class="td11">
+ <!--l. 53--><p class="noindent" >Member                    </td><td  style="white-space:normal; text-align:left;" id="TBL-1-41-5"  
+class="td11">
+ <!--l. 53--><p class="noindent" >1     </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-1-42-"><td  style="white-space:normal; text-align:left;" id="TBL-1-42-1"  
+class="td11">
+ <!--l. 54--><p class="noindent" >33        </td><td  style="white-space:normal; text-align:left;" id="TBL-1-42-2"  
+class="td11">
+ <!--l. 54--><p class="noindent" >Deependra Patel            </td><td  style="white-space:normal; text-align:left;" id="TBL-1-42-3"  
+class="td11">
+ <!--l. 54--><p class="noindent" >ee3210278@iitd.ac.in  </td><td  style="white-space:normal; text-align:left;" id="TBL-1-42-4"  
+class="td11">
+ <!--l. 54--><p class="noindent" >Member                    </td><td  style="white-space:normal; text-align:left;" id="TBL-1-42-5"  
+class="td11">
+ <!--l. 54--><p class="noindent" >1     </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-1-43-"><td  style="white-space:normal; text-align:left;" id="TBL-1-43-1"  
+class="td11">
+ <!--l. 55--><p class="noindent" >34        </td><td  style="white-space:normal; text-align:left;" id="TBL-1-43-2"  
+class="td11">
+ <!--l. 55--><p class="noindent" >Abhinav Kumar             </td><td  style="white-space:normal; text-align:left;" id="TBL-1-43-3"  
+class="td11">
+ <!--l. 55--><p class="noindent" >mt1210251@iitd.ac.in </td><td  style="white-space:normal; text-align:left;" id="TBL-1-43-4"  
+class="td11">
+ <!--l. 55--><p class="noindent" >Member                    </td><td  style="white-space:normal; text-align:left;" id="TBL-1-43-5"  
+class="td11">
+ <!--l. 55--><p class="noindent" >1     </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-1-44-"><td  style="white-space:normal; text-align:left;" id="TBL-1-44-1"  
+class="td11">
+ <!--l. 56--><p class="noindent" >35        </td><td  style="white-space:normal; text-align:left;" id="TBL-1-44-2"  
+class="td11">
+ <!--l. 56--><p class="noindent" >Kumar Arjun                </td><td  style="white-space:normal; text-align:left;" id="TBL-1-44-3"  
+class="td11">
+ <!--l. 56--><p class="noindent" >mt1210232@iitd.ac.in </td><td  style="white-space:normal; text-align:left;" id="TBL-1-44-4"  
+class="td11">
+ <!--l. 56--><p class="noindent" >Member                    </td><td  style="white-space:normal; text-align:left;" id="TBL-1-44-5"  
+class="td11">
+ <!--l. 56--><p class="noindent" >1     </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-1-45-"><td  style="white-space:normal; text-align:left;" id="TBL-1-45-1"  
+class="td11">
+ <!--l. 57--><p class="noindent" >36        </td><td  style="white-space:normal; text-align:left;" id="TBL-1-45-2"  
+class="td11">
+ <!--l. 57--><p class="noindent" >Jishnu Singh                 </td><td  style="white-space:normal; text-align:left;" id="TBL-1-45-3"  
+class="td11">
+ <!--l. 57--><p class="noindent" >ee1210624@iitd.ac.in  </td><td  style="white-space:normal; text-align:left;" id="TBL-1-45-4"  
+class="td11">
+ <!--l. 57--><p class="noindent" >Member                    </td><td  style="white-space:normal; text-align:left;" id="TBL-1-45-5"  
+class="td11">
+ <!--l. 57--><p class="noindent" >1     </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-1-46-"><td  style="white-space:normal; text-align:left;" id="TBL-1-46-1"  
+class="td11">
+ <!--l. 58--><p class="noindent" >37        </td><td  style="white-space:normal; text-align:left;" id="TBL-1-46-2"  
+class="td11">
+ <!--l. 58--><p class="noindent" >Shresth Ojha                 </td><td  style="white-space:normal; text-align:left;" id="TBL-1-46-3"  
+class="td11">
+ <!--l. 58--><p class="noindent" >ee3210969@iitd.ac.in  </td><td  style="white-space:normal; text-align:left;" id="TBL-1-46-4"  
+class="td11">
+ <!--l. 58--><p class="noindent" >Member                    </td><td  style="white-space:normal; text-align:left;" id="TBL-1-46-5"  
+class="td11">
+ <!--l. 58--><p class="noindent" >1     </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-1-47-"><td  style="white-space:normal; text-align:left;" id="TBL-1-47-1"  
+class="td11">
+ <!--l. 59--><p class="noindent" >38        </td><td  style="white-space:normal; text-align:left;" id="TBL-1-47-2"  
+class="td11">
+ <!--l. 59--><p class="noindent" >Shivam Jhanwar             </td><td  style="white-space:normal; text-align:left;" id="TBL-1-47-3"  
+class="td11">
+ <!--l. 59--><p class="noindent" >ee1210625@iitd.ac.in  </td><td  style="white-space:normal; text-align:left;" id="TBL-1-47-4"  
+class="td11">
+ <!--l. 59--><p class="noindent" >Member                    </td><td  style="white-space:normal; text-align:left;" id="TBL-1-47-5"  
+class="td11">
+ <!--l. 59--><p class="noindent" >1     </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-1-48-"><td  style="white-space:normal; text-align:left;" id="TBL-1-48-1"  
+class="td11">
+ <!--l. 60--><p class="noindent" >39        </td><td  style="white-space:normal; text-align:left;" id="TBL-1-48-2"  
+class="td11">
+ <!--l. 60--><p class="noindent" >Adnaan Mansoor            </td><td  style="white-space:normal; text-align:left;" id="TBL-1-48-3"  
+class="td11">
+ <!--l. 60--><p class="noindent" >ee1210666@iitd.ac.in  </td><td  style="white-space:normal; text-align:left;" id="TBL-1-48-4"  
+class="td11">
+ <!--l. 60--><p class="noindent" >Member                    </td><td  style="white-space:normal; text-align:left;" id="TBL-1-48-5"  
+class="td11">
+ <!--l. 60--><p class="noindent" >1     </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-1-49-"><td  style="white-space:normal; text-align:left;" id="TBL-1-49-1"  
+class="td11">
+ <!--l. 61--><p class="noindent" >40        </td><td  style="white-space:normal; text-align:left;" id="TBL-1-49-2"  
+class="td11">
+ <!--l. 61--><p class="noindent" >Bhaira Ram Gat            </td><td  style="white-space:normal; text-align:left;" id="TBL-1-49-3"  
+class="td11">
+ <!--l. 61--><p class="noindent" >ee3210726@iitd.ac.in  </td><td  style="white-space:normal; text-align:left;" id="TBL-1-49-4"  
+class="td11">
+ <!--l. 61--><p class="noindent" >Member                    </td><td  style="white-space:normal; text-align:left;" id="TBL-1-49-5"  
+class="td11">
+ <!--l. 61--><p class="noindent" >1     </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-1-50-"><td  style="white-space:normal; text-align:left;" id="TBL-1-50-1"  
+class="td11">
+ <!--l. 62--><p class="noindent" >41        </td><td  style="white-space:normal; text-align:left;" id="TBL-1-50-2"  
+class="td11">
+ <!--l. 62--><p class="noindent" >Nandini Choudhary        </td><td  style="white-space:normal; text-align:left;" id="TBL-1-50-3"  
+class="td11">
+ <!--l. 62--><p class="noindent" >ee3210716@iitd.ac.in  </td><td  style="white-space:normal; text-align:left;" id="TBL-1-50-4"  
+class="td11">
+ <!--l. 62--><p class="noindent" >Activity Coordinator   </td><td  style="white-space:normal; text-align:left;" id="TBL-1-50-5"  
+class="td11">
+ <!--l. 62--><p class="noindent" >1     </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-1-51-"><td  style="white-space:normal; text-align:left;" id="TBL-1-51-1"  
+class="td11">
+ <!--l. 63--><p class="noindent" >42        </td><td  style="white-space:normal; text-align:left;" id="TBL-1-51-2"  
+class="td11">
+ <!--l. 63--><p class="noindent" >Shouryan Singh              </td><td  style="white-space:normal; text-align:left;" id="TBL-1-51-3"  
+class="td11">
+ <!--l. 63--><p class="noindent" >mt6210943@iitd.ac.in </td><td  style="white-space:normal; text-align:left;" id="TBL-1-51-4"  
+class="td11">
+ <!--l. 63--><p class="noindent" >Member                    </td><td  style="white-space:normal; text-align:left;" id="TBL-1-51-5"  
+class="td11">
+ <!--l. 63--><p class="noindent" >1     </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-1-52-"><td  style="white-space:normal; text-align:left;" id="TBL-1-52-1"  
+class="td11">
+ <!--l. 64--><p class="noindent" >43        </td><td  style="white-space:normal; text-align:left;" id="TBL-1-52-2"  
+class="td11">
+ <!--l. 64--><p class="noindent" >Kartik Kumar Bansiwal   </td><td  style="white-space:normal; text-align:left;" id="TBL-1-52-3"  
+class="td11">
+ <!--l. 64--><p class="noindent" >ee3210743@iitd.ac.in  </td><td  style="white-space:normal; text-align:left;" id="TBL-1-52-4"  
+class="td11">
+ <!--l. 64--><p class="noindent" >Member                    </td><td  style="white-space:normal; text-align:left;" id="TBL-1-52-5"  
+class="td11">
+ <!--l. 64--><p class="noindent" >1     </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-1-53-"><td  style="white-space:normal; text-align:left;" id="TBL-1-53-1"  
+class="td11">
+ <!--l. 65--><p class="noindent" >44        </td><td  style="white-space:normal; text-align:left;" id="TBL-1-53-2"  
+class="td11">
+ <!--l. 65--><p class="noindent" >Gouri Nanda T R           </td><td  style="white-space:normal; text-align:left;" id="TBL-1-53-3"  
+class="td11">
+ <!--l. 65--><p class="noindent" >mt6210960@iitd.ac.in </td><td  style="white-space:normal; text-align:left;" id="TBL-1-53-4"  
+class="td11">
+ <!--l. 65--><p class="noindent" >Member                    </td><td  style="white-space:normal; text-align:left;" id="TBL-1-53-5"  
+class="td11">
+ <!--l. 65--><p class="noindent" >1     </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-1-54-"><td  style="white-space:normal; text-align:left;" id="TBL-1-54-1"  
+class="td11">
+ <!--l. 66--><p class="noindent" >45        </td><td  style="white-space:normal; text-align:left;" id="TBL-1-54-2"  
+class="td11">
+ <!--l. 66--><p class="noindent" >Siddhant Raj                 </td><td  style="white-space:normal; text-align:left;" id="TBL-1-54-3"  
+class="td11">
+ <!--l. 66--><p class="noindent" >mt1210932@iitd.ac.in </td><td  style="white-space:normal; text-align:left;" id="TBL-1-54-4"  
+class="td11">
+ <!--l. 66--><p class="noindent" >Member                    </td><td  style="white-space:normal; text-align:left;" id="TBL-1-54-5"  
+class="td11">
+ <!--l. 66--><p class="noindent" >1     </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-1-55-"><td  style="white-space:normal; text-align:left;" id="TBL-1-55-1"  
+class="td11">
+ <!--l. 67--><p class="noindent" >46        </td><td  style="white-space:normal; text-align:left;" id="TBL-1-55-2"  
+class="td11">
+ <!--l. 67--><p class="noindent" >Shreysh Verma              </td><td  style="white-space:normal; text-align:left;" id="TBL-1-55-3"  
+class="td11">
+ <!--l. 67--><p class="noindent" >ee3210742@iitd.ac.in  </td><td  style="white-space:normal; text-align:left;" id="TBL-1-55-4"  
+class="td11">
+ <!--l. 67--><p class="noindent" >Member                    </td><td  style="white-space:normal; text-align:left;" id="TBL-1-55-5"  
+class="td11">
+ <!--l. 67--><p class="noindent" >1     </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-1-56-"><td  style="white-space:normal; text-align:left;" id="TBL-1-56-1"  
+class="td11">
+ <!--l. 68--><p class="noindent" >47        </td><td  style="white-space:normal; text-align:left;" id="TBL-1-56-2"  
+class="td11">
+ <!--l. 68--><p class="noindent" >Kashish Kumawat          </td><td  style="white-space:normal; text-align:left;" id="TBL-1-56-3"  
+class="td11">
+ <!--l. 68--><p class="noindent" >ee3210739@iitd.ac.in  </td><td  style="white-space:normal; text-align:left;" id="TBL-1-56-4"  
+class="td11">
+ <!--l. 68--><p class="noindent" >Member                    </td><td  style="white-space:normal; text-align:left;" id="TBL-1-56-5"  
+class="td11">
+ <!--l. 68--><p class="noindent" >1     </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-1-57-"><td  style="white-space:normal; text-align:left;" id="TBL-1-57-1"  
+class="td11">
+ <!--l. 69--><p class="noindent" >48        </td><td  style="white-space:normal; text-align:left;" id="TBL-1-57-2"  
+class="td11">
+ <!--l. 69--><p class="noindent" >Anjali Pande                 </td><td  style="white-space:normal; text-align:left;" id="TBL-1-57-3"  
+class="td11">
+ <!--l. 69--><p class="noindent" >ee3210737@iitd.ac.in  </td><td  style="white-space:normal; text-align:left;" id="TBL-1-57-4"  
+class="td11">
+ <!--l. 69--><p class="noindent" >Member                    </td><td  style="white-space:normal; text-align:left;" id="TBL-1-57-5"  
+class="td11">
+ <!--l. 69--><p class="noindent" >1     </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-1-58-"><td  style="white-space:normal; text-align:left;" id="TBL-1-58-1"  
+class="td11">
+ <!--l. 70--><p class="noindent" >49        </td><td  style="white-space:normal; text-align:left;" id="TBL-1-58-2"  
+class="td11">
+ <!--l. 70--><p class="noindent" >Aaradhya Singh             </td><td  style="white-space:normal; text-align:left;" id="TBL-1-58-3"  
+class="td11">
+ <!--l. 70--><p class="noindent" >ee3210736@iitd.ac.in  </td><td  style="white-space:normal; text-align:left;" id="TBL-1-58-4"  
+class="td11">
+ <!--l. 70--><p class="noindent" >Member                    </td><td  style="white-space:normal; text-align:left;" id="TBL-1-58-5"  
+class="td11">
+ <!--l. 70--><p class="noindent" >1     </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-1-59-"><td  style="white-space:normal; text-align:left;" id="TBL-1-59-1"  
+class="td11">
+ <!--l. 71--><p class="noindent" >50        </td><td  style="white-space:normal; text-align:left;" id="TBL-1-59-2"  
+class="td11">
+ <!--l. 71--><p class="noindent" >Ishav Singla                  </td><td  style="white-space:normal; text-align:left;" id="TBL-1-59-3"  
+class="td11">
+ <!--l. 71--><p class="noindent" >mt1210889@iitd.ac.in </td><td  style="white-space:normal; text-align:left;" id="TBL-1-59-4"  
+class="td11">
+ <!--l. 71--><p class="noindent" >Member                    </td><td  style="white-space:normal; text-align:left;" id="TBL-1-59-5"  
+class="td11">
+ <!--l. 71--><p class="noindent" >1     </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-1-60-"><td  style="white-space:normal; text-align:left;" id="TBL-1-60-1"  
+class="td11">
+ <!--l. 72--><p class="noindent" >51        </td><td  style="white-space:normal; text-align:left;" id="TBL-1-60-2"  
+class="td11">
+ <!--l. 72--><p class="noindent" >Gajendra Meena            </td><td  style="white-space:normal; text-align:left;" id="TBL-1-60-3"  
+class="td11">
+ <!--l. 72--><p class="noindent" >ee3210750@iitd.ac.in  </td><td  style="white-space:normal; text-align:left;" id="TBL-1-60-4"  
+class="td11">
+ <!--l. 72--><p class="noindent" >Member                    </td><td  style="white-space:normal; text-align:left;" id="TBL-1-60-5"  
+class="td11">
+ <!--l. 72--><p class="noindent" >1     </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-1-61-"><td  style="white-space:normal; text-align:left;" id="TBL-1-61-1"  
+class="td11">
+ <!--l. 73--><p class="noindent" >52        </td><td  style="white-space:normal; text-align:left;" id="TBL-1-61-2"  
+class="td11">
+ <!--l. 73--><p class="noindent" >Yogendra Kumar            </td><td  style="white-space:normal; text-align:left;" id="TBL-1-61-3"  
+class="td11">
+ <!--l. 73--><p class="noindent" >ee1210170@iitd.ac.in  </td><td  style="white-space:normal; text-align:left;" id="TBL-1-61-4"  
+class="td11">
+ <!--l. 73--><p class="noindent" >Member                    </td><td  style="white-space:normal; text-align:left;" id="TBL-1-61-5"  
+class="td11">
+ <!--l. 73--><p class="noindent" >1     </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-1-62-"><td  style="white-space:normal; text-align:left;" id="TBL-1-62-1"  
+class="td11">
+ <!--l. 74--><p class="noindent" >53        </td><td  style="white-space:normal; text-align:left;" id="TBL-1-62-2"  
+class="td11">
+ <!--l. 74--><p class="noindent" >Vishal Gupta                 </td><td  style="white-space:normal; text-align:left;" id="TBL-1-62-3"  
+class="td11">
+ <!--l. 74--><p class="noindent" >mt6210955@iitd.ac.in </td><td  style="white-space:normal; text-align:left;" id="TBL-1-62-4"  
+class="td11">
+ <!--l. 74--><p class="noindent" >Member                    </td><td  style="white-space:normal; text-align:left;" id="TBL-1-62-5"  
+class="td11">
+ <!--l. 74--><p class="noindent" >1     </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-1-63-"><td  style="white-space:normal; text-align:left;" id="TBL-1-63-1"  
+class="td11">
+ <!--l. 75--><p class="noindent" >54        </td><td  style="white-space:normal; text-align:left;" id="TBL-1-63-2"  
+class="td11">
+ <!--l. 75--><p class="noindent" >Srijan Singh                  </td><td  style="white-space:normal; text-align:left;" id="TBL-1-63-3"  
+class="td11">
+ <!--l. 75--><p class="noindent" >ee1210675@iitd.ac.in  </td><td  style="white-space:normal; text-align:left;" id="TBL-1-63-4"  
+class="td11">
+ <!--l. 75--><p class="noindent" >Member                    </td><td  style="white-space:normal; text-align:left;" id="TBL-1-63-5"  
+class="td11">
+ <!--l. 75--><p class="noindent" >1     </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-1-64-"><td  style="white-space:normal; text-align:left;" id="TBL-1-64-1"  
+class="td11">
+ <!--l. 76--><p class="noindent" >55        </td><td  style="white-space:normal; text-align:left;" id="TBL-1-64-2"  
+class="td11">
+ <!--l. 76--><p class="noindent" >Nandini Singh               </td><td  style="white-space:normal; text-align:left;" id="TBL-1-64-3"  
+class="td11">
+ <!--l. 76--><p class="noindent" >ee3210747@iitd.ac.in  </td><td  style="white-space:normal; text-align:left;" id="TBL-1-64-4"  
+class="td11">
+ <!--l. 76--><p class="noindent" >Member                    </td><td  style="white-space:normal; text-align:left;" id="TBL-1-64-5"  
+class="td11">
+ <!--l. 76--><p class="noindent" >1     </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-1-65-"><td  style="white-space:normal; text-align:left;" id="TBL-1-65-1"  
+class="td11">
+ <!--l. 77--><p class="noindent" >56        </td><td  style="white-space:normal; text-align:left;" id="TBL-1-65-2"  
+class="td11">
+ <!--l. 77--><p class="noindent" >Himanshu Bilkhiwal        </td><td  style="white-space:normal; text-align:left;" id="TBL-1-65-3"  
+class="td11">
+ <!--l. 77--><p class="noindent" >ee3210728@iitd.ac.in  </td><td  style="white-space:normal; text-align:left;" id="TBL-1-65-4"  
+class="td11">
+ <!--l. 77--><p class="noindent" >Member                    </td><td  style="white-space:normal; text-align:left;" id="TBL-1-65-5"  
+class="td11">
+ <!--l. 77--><p class="noindent" >1     </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-1-66-"><td  style="white-space:normal; text-align:left;" id="TBL-1-66-1"  
+class="td11">
+ <!--l. 78--><p class="noindent" >57        </td><td  style="white-space:normal; text-align:left;" id="TBL-1-66-2"  
+class="td11">
+ <!--l. 78--><p class="noindent" >Harshit gupta                </td><td  style="white-space:normal; text-align:left;" id="TBL-1-66-3"  
+class="td11">
+ <!--l. 78--><p class="noindent" >ee3210722@iitd.ac.in  </td><td  style="white-space:normal; text-align:left;" id="TBL-1-66-4"  
+class="td11">
+ <!--l. 78--><p class="noindent" >Member                    </td><td  style="white-space:normal; text-align:left;" id="TBL-1-66-5"  
+class="td11">
+ <!--l. 78--><p class="noindent" >1     </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-1-67-"><td  style="white-space:normal; text-align:left;" id="TBL-1-67-1"  
+class="td11">
+ <!--l. 79--><p class="noindent" >58        </td><td  style="white-space:normal; text-align:left;" id="TBL-1-67-2"  
+class="td11">
+ <!--l. 79--><p class="noindent" >Amitesh Gupta              </td><td  style="white-space:normal; text-align:left;" id="TBL-1-67-3"  
+class="td11">
+ <!--l. 79--><p class="noindent" >ee3210724@iitd.ac.in  </td><td  style="white-space:normal; text-align:left;" id="TBL-1-67-4"  
+class="td11">
+ <!--l. 79--><p class="noindent" >Member                    </td><td  style="white-space:normal; text-align:left;" id="TBL-1-67-5"  
+class="td11">
+ <!--l. 79--><p class="noindent" >1     </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-1-68-"><td  style="white-space:normal; text-align:left;" id="TBL-1-68-1"  
+class="td11">
+ <!--l. 80--><p class="noindent" >59        </td><td  style="white-space:normal; text-align:left;" id="TBL-1-68-2"  
+class="td11">
+ <!--l. 80--><p class="noindent" >Nishant Yadav               </td><td  style="white-space:normal; text-align:left;" id="TBL-1-68-3"  
+class="td11">
+ <!--l. 80--><p class="noindent" >mt1210911@iitd.ac.in </td><td  style="white-space:normal; text-align:left;" id="TBL-1-68-4"  
+class="td11">
+ <!--l. 80--><p class="noindent" >Member                    </td><td  style="white-space:normal; text-align:left;" id="TBL-1-68-5"  
+class="td11">
+ <!--l. 80--><p class="noindent" >1     </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-1-69-"><td  style="white-space:normal; text-align:left;" id="TBL-1-69-1"  
+class="td11">
+ <!--l. 81--><p class="noindent" >60        </td><td  style="white-space:normal; text-align:left;" id="TBL-1-69-2"  
+class="td11">
+ <!--l. 81--><p class="noindent" >Aman Yadav                 </td><td  style="white-space:normal; text-align:left;" id="TBL-1-69-3"  
+class="td11">
+ <!--l. 81--><p class="noindent" >ee3210734@iitd.ac.in  </td><td  style="white-space:normal; text-align:left;" id="TBL-1-69-4"  
+class="td11">
+ <!--l. 81--><p class="noindent" >Member                    </td><td  style="white-space:normal; text-align:left;" id="TBL-1-69-5"  
+class="td11">
+ <!--l. 81--><p class="noindent" >1     </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-1-70-"><td  style="white-space:normal; text-align:left;" id="TBL-1-70-1"  
+class="td11">
+ <!--l. 82--><p class="noindent" >61        </td><td  style="white-space:normal; text-align:left;" id="TBL-1-70-2"  
+class="td11">
+ <!--l. 82--><p class="noindent" >Tarush Rajawat             </td><td  style="white-space:normal; text-align:left;" id="TBL-1-70-3"  
+class="td11">
+ <!--l. 82--><p class="noindent" >ee3210708@iitd.ac.in  </td><td  style="white-space:normal; text-align:left;" id="TBL-1-70-4"  
+class="td11">
+ <!--l. 82--><p class="noindent" >Member                    </td><td  style="white-space:normal; text-align:left;" id="TBL-1-70-5"  
+class="td11">
+ <!--l. 82--><p class="noindent" >1     </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-1-71-"><td  style="white-space:normal; text-align:left;" id="TBL-1-71-1"  
+class="td11">
+ <!--l. 83--><p class="noindent" >62        </td><td  style="white-space:normal; text-align:left;" id="TBL-1-71-2"  
+class="td11">
+ <!--l. 83--><p class="noindent" >Utkarsh Pal                   </td><td  style="white-space:normal; text-align:left;" id="TBL-1-71-3"  
+class="td11">
+ <!--l. 83--><p class="noindent" >mt6210954@iitd.ac.in </td><td  style="white-space:normal; text-align:left;" id="TBL-1-71-4"  
+class="td11">
+ <!--l. 83--><p class="noindent" >Member                    </td><td  style="white-space:normal; text-align:left;" id="TBL-1-71-5"  
+class="td11">
+ <!--l. 83--><p class="noindent" >1     </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-1-72-"><td  style="white-space:normal; text-align:left;" id="TBL-1-72-1"  
+class="td11">
+ <!--l. 84--><p class="noindent" >63        </td><td  style="white-space:normal; text-align:left;" id="TBL-1-72-2"  
+class="td11">
+ <!--l. 84--><p class="noindent" >Agniv Nath                   </td><td  style="white-space:normal; text-align:left;" id="TBL-1-72-3"  
+class="td11">
+ <!--l. 84--><p class="noindent" >ee3210727@iitd.ac.in  </td><td  style="white-space:normal; text-align:left;" id="TBL-1-72-4"  
+class="td11">
+ <!--l. 84--><p class="noindent" >Member                    </td><td  style="white-space:normal; text-align:left;" id="TBL-1-72-5"  
+class="td11">
+ <!--l. 84--><p class="noindent" >1     </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-1-73-"><td  style="white-space:normal; text-align:left;" id="TBL-1-73-1"  
+class="td11">
+ <!--l. 85--><p class="noindent" >64        </td><td  style="white-space:normal; text-align:left;" id="TBL-1-73-2"  
+class="td11">
+ <!--l. 85--><p class="noindent" >Aarish Tickoo                </td><td  style="white-space:normal; text-align:left;" id="TBL-1-73-3"  
+class="td11">
+ <!--l. 85--><p class="noindent" >ee3210706@iitd.ac.in  </td><td  style="white-space:normal; text-align:left;" id="TBL-1-73-4"  
+class="td11">
+ <!--l. 85--><p class="noindent" >Member                    </td><td  style="white-space:normal; text-align:left;" id="TBL-1-73-5"  
+class="td11">
+ <!--l. 85--><p class="noindent" >1     </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-1-74-"><td  style="white-space:normal; text-align:left;" id="TBL-1-74-1"  
+class="td11">
+ <!--l. 86--><p class="noindent" >65        </td><td  style="white-space:normal; text-align:left;" id="TBL-1-74-2"  
+class="td11">
+ <!--l. 86--><p class="noindent" >Rishank Aggarwal          </td><td  style="white-space:normal; text-align:left;" id="TBL-1-74-3"  
+class="td11">
+ <!--l. 86--><p class="noindent" >mt1210897@iitd.ac.in </td><td  style="white-space:normal; text-align:left;" id="TBL-1-74-4"  
+class="td11">
+ <!--l. 86--><p class="noindent" >Member                    </td><td  style="white-space:normal; text-align:left;" id="TBL-1-74-5"  
+class="td11">
+ <!--l. 86--><p class="noindent" >1     </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-1-75-"><td  style="white-space:normal; text-align:left;" id="TBL-1-75-1"  
+class="td11">
+ <!--l. 87--><p class="noindent" >66        </td><td  style="white-space:normal; text-align:left;" id="TBL-1-75-2"  
+class="td11">
+ <!--l. 87--><p class="noindent" >Abhyudaia Krishan         </td><td  style="white-space:normal; text-align:left;" id="TBL-1-75-3"  
+class="td11">
+ <!--l. 87--><p class="noindent" >mt6210963@iitd.ac.in </td><td  style="white-space:normal; text-align:left;" id="TBL-1-75-4"  
+class="td11">
+ <!--l. 87--><p class="noindent" >Member                    </td><td  style="white-space:normal; text-align:left;" id="TBL-1-75-5"  
+class="td11">
+ <!--l. 87--><p class="noindent" >1     </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-1-76-"><td  style="white-space:normal; text-align:left;" id="TBL-1-76-1"  
+class="td11">
+ <!--l. 88--><p class="noindent" >67        </td><td  style="white-space:normal; text-align:left;" id="TBL-1-76-2"  
+class="td11">
+ <!--l. 88--><p class="noindent" >Vedant Verma               </td><td  style="white-space:normal; text-align:left;" id="TBL-1-76-3"  
+class="td11">
+ <!--l. 88--><p class="noindent" >ee1210157@iitd.ac.in  </td><td  style="white-space:normal; text-align:left;" id="TBL-1-76-4"  
+class="td11">
+ <!--l. 88--><p class="noindent" >Member                    </td><td  style="white-space:normal; text-align:left;" id="TBL-1-76-5"  
+class="td11">
+ <!--l. 88--><p class="noindent" >1     </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-1-77-"><td  style="white-space:normal; text-align:left;" id="TBL-1-77-1"  
+class="td11">
+ <!--l. 89--><p class="noindent" >68        </td><td  style="white-space:normal; text-align:left;" id="TBL-1-77-2"  
+class="td11">
+ <!--l. 89--><p class="noindent" >Riju Bindua                  </td><td  style="white-space:normal; text-align:left;" id="TBL-1-77-3"  
+class="td11">
+ <!--l. 89--><p class="noindent" >mt1210903@iitd.ac.in </td><td  style="white-space:normal; text-align:left;" id="TBL-1-77-4"  
+class="td11">
+ <!--l. 89--><p class="noindent" >Member                    </td><td  style="white-space:normal; text-align:left;" id="TBL-1-77-5"  
+class="td11">
+ <!--l. 89--><p class="noindent" >1     </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-1-78-"><td colspan="3" style="white-space:normal; text-align:left;" id="TBL-1-78-1"  
+class="td11"></td>                  <div class="multicolumn"  style="white-space:nowrap; text-align:center;"> <div class="caption" 
+><span class="id">Table&#x00A0;1: </span><span  
+class="content">Team Members - Tribe E</span></div><!--tex4ht:label?: x1-2001r1 -->                           </div>        
+                                                                                      
+</tr><tr  
+ style="vertical-align:baseline;" id="TBL-1-79-"><td  style="white-space:normal; text-align:left;" id="TBL-1-79-1"  
+class="td11">        </td>
+</tr><tr  
+ style="vertical-align:baseline;" id="TBL-1-80-"><td  style="white-space:normal; text-align:left;" id="TBL-1-80-1"  
+class="td11">
+ <!--l. 91--><p class="noindent" >       </td>
+</tr><tr  
+ style="vertical-align:baseline;" id="TBL-1-81-"><td  style="white-space:normal; text-align:left;" id="TBL-1-81-1"  
+class="td11">
+ <!--l. 91--><p class="noindent" >       </td>
+</tr><tr  
+ style="vertical-align:baseline;" id="TBL-1-82-"><td  style="white-space:normal; text-align:left;" id="TBL-1-82-1"  
+class="td11">
+ <!--l. 91--><p class="noindent" >       </td>
+   </tr>
+<tr  
+ style="vertical-align:baseline;" id="TBL-1-8-"><td  style="white-space:normal; text-align:left;" id="TBL-1-8-1"  
+class="td11">
+ <!--l. 19--><p class="noindent" >       </td>
+</tr><tr  
+ style="vertical-align:baseline;" id="TBL-1-9-"><td  style="white-space:normal; text-align:left;" id="TBL-1-9-1"  
+class="td11">
+ <!--l. 19--><p class="noindent" >       </td>
+   </tr>
+   </table></div>
+<!--l. 68--><p class="nopar" >
+   <h3 class="likesectionHead"><a 
+ id="x1-30001"></a>List of Figures</h3>
+   <div class="tableofcontents"><span class="lofToc" >1&#x00A0;<a 
+href="#x1-5001r1">Mind Map</a></span><br /><span class="lofToc" >2&#x00A0;<a 
+href="#x1-7001r2">GANTT Chart</a></span><br /><span class="lofToc" >3&#x00A0;<a 
+href="#x1-8001r3">Network Chart</a></span><br /><span class="lofToc" >4&#x00A0;<a 
+href="#x1-9001r4">Resource Breakdown
+Structure</a></span><br /><span class="lofToc" >5&#x00A0;<a 
+href="#x1-10001r5">Work Breakdown Structure</a></span><br />
+   </div>
+<!--l. 70--><p class="nopar" >
+   <h3 class="likesectionHead"><a 
+ id="x1-40001"></a>List of Tables</h3>
+   <div class="tableofcontents"><span class="lotToc" >1&#x00A0;<a 
+href="#x1-2001r1">Team Members - Tribe E</a></span><br />
+   </div>
+                                                                                      
+                                                                                      
+   <h3 class="sectionHead"><span class="titlemark">2   </span> <a 
+ id="x1-50002"></a>Mind Map</h3>
+<!--l. 74--><p class="nopar" ><hr class="figure"><div class="figure" 
+>
+                                                                                      
+                                                                                      
+<a 
+ id="x1-5001r1"></a>
+                                                                                      
+                                                                                      
+<!--l. 113--><p class="noindent" >                                         <img 
+src="Working_Doc0x.svg" alt="CLOOPoESopICtMOonnicMenlohouPwnvteairRptedtoeeitsaeuhrepwrcrDicTtqtuetoeoiiustrivnmnmoisimaenrtenaeyndlmteeadnlts
+ DIofSenotpInuTaupriitucmlsstee
+ RReeqquuiirreemmeennttss " >
+<br /> <div class="caption" 
+><span class="id">Figure&#x00A0;1: </span><span  
+class="content">Mind Map</span></div><!--tex4ht:label?: x1-5001r1 -->
+                                                                                      
+                                                                                      
+<!--l. 116--><p class="nopar" ></div><hr class="endfigure">
+<!--l. 118--><p class="indent" >
+                                                                                      
+                                                                                      
+   <h3 class="sectionHead"><span class="titlemark">3   </span> <a 
+ id="x1-60003"></a>Project Management Details</h3>
+<!--l. 120--><p class="nopar" >
+   <h4 class="subsectionHead"><span class="titlemark">3.1   </span> <a 
+ id="x1-70003.1"></a>Gantt Chart</h4>
+<div class="center" 
+>
+<!--l. 121--><p class="noindent" >
+<!--l. 122--><p class="noindent" ><hr class="figure"><div class="figure" 
+><a 
+ id="x1-7001r2"></a> <img 
+src="Images/Gantt Chart (1)_1.jpg" alt="PIC"  
+width="475" height="475" >
+<br /> <div class="caption" 
+><span class="id">Figure&#x00A0;2: </span><span  
+class="content">GANTT Chart</span></div><!--tex4ht:label?: x1-7001r2 -->
+<!--l. 127--><p class="noindent" ></div><hr class="endfigure">
+</div>
+<!--l. 130--><p class="nopar" >
+   <h4 class="subsectionHead"><span class="titlemark">3.2   </span> <a 
+ id="x1-80003.2"></a>Network Chart</h4>
+<div class="center" 
+>
+<!--l. 131--><p class="noindent" >
+<!--l. 132--><p class="noindent" ><hr class="figure"><div class="figure" 
+><a 
+ id="x1-8001r3"></a> <img 
+src="Images/NetworkChart_1.jpg" alt="PIC"  
+width="475" height="475" >
+<br /> <div class="caption" 
+><span class="id">Figure&#x00A0;3: </span><span  
+class="content">Network Chart</span></div><!--tex4ht:label?: x1-8001r3 -->
+<!--l. 137--><p class="noindent" ></div><hr class="endfigure">
+</div>
+<!--l. 140--><p class="nopar" >
+   <h4 class="subsectionHead"><span class="titlemark">3.3   </span> <a 
+ id="x1-90003.3"></a>RBS</h4>
+<div class="center" 
+>
+<!--l. 141--><p class="noindent" >
+<!--l. 142--><p class="noindent" ><hr class="figure"><div class="figure" 
+><a 
+ id="x1-9001r4"></a> <img 
+src="Images/RBS_1.jpg" alt="PIC"  
+width="452" height="453" >
+<br /> <div class="caption" 
+><span class="id">Figure&#x00A0;4: </span><span  
+class="content">Resource Breakdown Structure</span></div><!--tex4ht:label?: x1-9001r4 -->
+<!--l. 147--><p class="noindent" ></div><hr class="endfigure">
+</div>
+                                                                                      
+                                                                                      
+<!--l. 150--><p class="nopar" >
+   <h4 class="subsectionHead"><span class="titlemark">3.4   </span> <a 
+ id="x1-100003.4"></a>WBS</h4>
+<div class="center" 
+>
+<!--l. 151--><p class="noindent" >
+<!--l. 152--><p class="noindent" ><hr class="figure"><div class="figure" 
+><a 
+ id="x1-10001r5"></a> <img 
+src="Images/WBS_1.jpg" alt="PIC"  
+width="498" height="498" >
+<br /> <div class="caption" 
+><span class="id">Figure&#x00A0;5: </span><span  
+class="content">Work Breakdown Structure</span></div><!--tex4ht:label?: x1-10001r5 -->
+<!--l. 157--><p class="noindent" ></div><hr class="endfigure">
+</div>
+<!--l. 159--><p class="nopar" >
+   <h3 class="sectionHead"><span class="titlemark">4   </span> <a 
+ id="x1-110004"></a>Abstract</h3>
+<!--l. 160--><p class="nopar" >The goal of this project is to create an effective cloth cleaning equipment specifically for
+treating white unbleached cotton cloth after production. The cloth needs a particular cleaning
+procedure because of its unique size, thread count, and ingrained oil-based stains imbued
+during manufacturing. The machine, intended for semi-industrial settings, needs to be quick to
+use, use less resources, and adhere to environmental rules. Time efficiency being of utmost
+importance, each batch must complete a full washing and drying cycle in less than 45
+minutes.
+<!--l. 162--><p class="nopar" >
+   <h3 class="sectionHead"><span class="titlemark">5   </span> <a 
+ id="x1-120005"></a>Motivation</h3>
+<!--l. 163--><p class="nopar" >The motivation behind this cloth cleaning machine design project is rooted in addressing a
+practical need within the textile industry. Manufacturing uncolored cotton cloth presents
+unique challenges, with oil-based stains acquired during the manufacturing process requiring
+specialized cleaning. The pursuit of an efficient and tailored solution stems from a commitment
+to innovation. <br 
+class="newline" /><br 
+class="newline" />By developing a machine specifically designed for post-manufacturing treatment, we aim
+to enhance the overall quality and cleanliness of the cloth. The project&#8217;s focus on
+utilizing minimal resources aligns with our commitment to environmental responsibility,
+ensuring compliance with regulatory standards. The project&#8217;s scope extends beyond
+technical efficiency. We envision a cloth cleaning machine that caters to the needs
+of semi-industrial sites. Furthermore, the motivation is fueled by the aspiration to
+contribute to time efficiency. With a targeted washing and drying cycle of under 45
+minutes per batch, we seek to streamline operations and enhance productivity in textile
+processing.
+   <h3 class="sectionHead"><span class="titlemark">6   </span> <a 
+ id="x1-130006"></a>Requirements</h3>
+                                                                                      
+                                                                                      
+<!--l. 2--><p class="nopar" >
+   <h4 class="subsectionHead"><span class="titlemark">6.1   </span> <a 
+ id="x1-140006.1"></a>Problem Statement</h4>
+<div class="center" 
+>
+<!--l. 3--><p class="noindent" >
+<!--l. 4--><p class="noindent" ><span 
+class="cmbx-12">&#8220;Design and Manufacture a machine to clean manufacturing stains off an</span>
+<span 
+class="cmbx-12">unbleached cotton cloth &#8221;</span></div>
+<!--l. 7--><p class="nopar" >
+   <h4 class="subsectionHead"><span class="titlemark">6.2   </span> <a 
+ id="x1-150006.2"></a>Input Requirements</h4>
+<!--l. 8--><p class="nopar" >
+   <h5 class="subsubsectionHead"><span class="titlemark">6.2.1   </span> <a 
+ id="x1-160006.2.1"></a>Cloth Details</h5>
+      <ul class="itemize1">
+      <li class="itemize">
+      <!--l. 10--><p class="noindent" >The cloth being cleaned is just-manufactured, uncolored cotton cloth, for general
+      usage.  The  thickness  is  1-ply,  with  a  thread  count  of  400,  and  of  denier  60
+      opaqueness.
+      </li>
+      <li class="itemize">
+      <!--l. 11--><p class="noindent" >The dimensions of the cloth to be cleaned are a maximum of 10m length and 2m
+      width or a continuous roll of 2m width.
+      </li>
+      <li class="itemize">
+      <!--l. 12--><p class="noindent" >Cloth, if uncut, needs to be cut to 10m x 2m size.
+      </li>
+      <li class="itemize">
+      <!--l. 13--><p class="noindent" >The cloth has mostly oil-based stains, to begin with, naturally imbued during the
+      manufacturing process.</li></ul>
+<!--l. 15--><p class="nopar" >
+   <h5 class="subsubsectionHead"><span class="titlemark">6.2.2   </span> <a 
+ id="x1-170006.2.2"></a>Other inputs</h5>
+      <ul class="itemize1">
+      <li class="itemize">
+      <!--l. 17--><p class="noindent" >The machine works with pressured water available at an ambient temperature from
+      a 35m overhead tank of capacity 50l on-site.
+                                                                                      
+                                                                                      
+      </li>
+      <li class="itemize">
+      <!--l. 18--><p class="noindent" >The machine works with water of 80<span 
+class="cmmi-12">mg&#x2215;l CaCO</span><sub><span 
+class="cmr-8">3</span></sub> equivalent hardness.
+      </li>
+      <li class="itemize">
+      <!--l. 19--><p class="noindent" >Expendable materials like detergents, soaps, etc are to be treated as a running cost,
+      and paid for by the client after installation.</li></ul>
+<!--l. 21--><p class="nopar" >
+   <h5 class="subsubsectionHead"><span class="titlemark">6.2.3   </span> <a 
+ id="x1-180006.2.3"></a>Mode of Input</h5>
+      <ul class="itemize1">
+      <li class="itemize">
+      <!--l. 23--><p class="noindent" >The machine cleans in batches of 11 Kg dry weight per batch.
+      </li>
+      <li class="itemize">
+      <!--l. 24--><p class="noindent" >Only a single program for general washing is required.
+      </li>
+      <li class="itemize">
+      <!--l. 25--><p class="noindent" >The machine is required to have the capability to sequentially process multiple
+      batches prepared beforehand by the client.</li></ul>
+<!--l. 28--><p class="nopar" >
+   <h4 class="subsectionHead"><span class="titlemark">6.3   </span> <a 
+ id="x1-190006.3"></a>Output Requirements</h4>
+      <ul class="itemize1">
+      <li class="itemize">
+      <!--l. 30--><p class="noindent" >The machine is required to both wash and dry the cloth.
+      </li>
+      <li class="itemize">
+      <!--l. 31--><p class="noindent" >The 10m x 2m output cloth needs to be rolled.
+      </li>
+      <li class="itemize">
+      <!--l. 32--><p class="noindent" >The output should be bone-dry.</li></ul>
+                                                                                      
+                                                                                      
+<!--l. 34--><p class="nopar" >
+   <h4 class="subsectionHead"><span class="titlemark">6.4   </span> <a 
+ id="x1-200006.4"></a>Power Requirements</h4>
+      <ul class="itemize1">
+      <li class="itemize">
+      <!--l. 36--><p class="noindent" >The machine must be compatible with 220V AC 1-&#x03A6; (desirable) and 440V AC 3-&#x03A6;
+      power drawing a maximum current of 15A.
+      </li>
+      <li class="itemize">
+      <!--l. 37--><p class="noindent" >The machine must be able to be connected to plug points up to 20m away.</li></ul>
+<!--l. 40--><p class="nopar" >
+   <h4 class="subsectionHead"><span class="titlemark">6.5   </span> <a 
+ id="x1-210006.5"></a>Environmental Requirements</h4>
+      <ul class="itemize1">
+      <li class="itemize">
+      <!--l. 42--><p class="noindent" >The machine must use as low an amount of resources(water, electricity) as possible,
+      and comply with CPCB Regulations.</li></ul>
+<!--l. 44--><p class="nopar" >
+   <h4 class="subsectionHead"><span class="titlemark">6.6   </span> <a 
+ id="x1-220006.6"></a>Site-Demanded Requirements</h4>
+      <ul class="itemize1">
+      <li class="itemize">
+      <!--l. 46--><p class="noindent" >The machine is designed to be used at semi-industrial sites.
+      </li>
+      <li class="itemize">
+      <!--l. 47--><p class="noindent" >The machine must produce a maximum noise intensity of 70dB.
+      </li>
+      <li class="itemize">
+      <!--l. 48--><p class="noindent" >The machine is desired to be disassembleable and re-installable on request.</li></ul>
+<!--l. 50--><p class="nopar" >
+   <h4 class="subsectionHead"><span class="titlemark">6.7   </span> <a 
+ id="x1-230006.7"></a>Structural Requirements</h4>
+      <ul class="itemize1">
+      <li class="itemize">
+      <!--l. 52--><p class="noindent" >The machine must be of maximum dimensions 25m x 40m x 60m, designed to be
+      installed in an industrial-size enclosure, or an open courtyard.</li></ul>
+                                                                                      
+                                                                                      
+<!--l. 54--><p class="nopar" >
+   <h4 class="subsectionHead"><span class="titlemark">6.8   </span> <a 
+ id="x1-240006.8"></a>Time Requirements</h4>
+<!--l. 55--><p class="nopar" >
+   <h5 class="subsubsectionHead"><span class="titlemark">6.8.1   </span> <a 
+ id="x1-250006.8.1"></a>Operational Time</h5>
+      <ul class="itemize1">
+      <li class="itemize">
+      <!--l. 57--><p class="noindent" >The maximum time to wash and dry a batch must be under 45 minutes.</li></ul>
+<!--l. 166--><p class="nopar" >
+                                                                                      
+                                                                                      
+   <h3 class="sectionHead"><span class="titlemark">A   </span> <a 
+ id="x1-26000A"></a>Appendix</h3>
+<!--l. 169--><p class="nopar" >
+   <h4 class="subsectionHead"><span class="titlemark">A.1   </span> <a 
+ id="x1-27000A.1"></a>Document ID</h4>
+      <ul class="itemize1">
+      <li class="itemize">
+      <!--l. 171--><p class="noindent" >Document Type - Private Release
+      </li>
+      <li class="itemize">
+      <!--l. 172--><p class="noindent" >Document Authorised by : Samarth Singla
+      </li>
+      <li class="itemize">
+      <!--l. 173--><p class="noindent" >Publication Date : 13 January 2024
+      </li>
+      <li class="itemize">
+      <!--l. 174--><p class="noindent" >Version Number 1.0</li></ul>
+<!--l. 176--><p class="nopar" >
+   <h4 class="subsectionHead"><span class="titlemark">A.2   </span> <a 
+ id="x1-28000A.2"></a>Document Statistics</h4>
+      <ul class="itemize1">
+      <li class="itemize">
+      <!--l. 178--><p class="noindent" >Number of words = 716
+      </li>
+      <li class="itemize">
+      <!--l. 179--><p class="noindent" >Number of Sentences = 77
+      </li>
+      <li class="itemize">
+      <!--l. 180--><p class="noindent" >Number of Characters = 4576</li></ul>
+<!--l. 182--><p class="nopar" >
+   <h4 class="subsectionHead"><span class="titlemark">A.3   </span> <a 
+ id="x1-29000A.3"></a>Readability Indices</h4>
+   <div class="table">
+                                                                                      
+                                                                                      
+<!--l. 183--><p class="indent" >   <hr class="float"><div class="float" 
+>
+                                                                                      
+                                                                                      
+<div class="center" 
+>
+<!--l. 185--><p class="noindent" >
+<div class="tabular"> <table id="TBL-2" class="tabular" 
+ 
+><colgroup id="TBL-2-1g"><col 
+id="TBL-2-1"></colgroup><colgroup id="TBL-2-2g"><col 
+id="TBL-2-2"></colgroup><colgroup id="TBL-2-3g"><col 
+id="TBL-2-3"></colgroup><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-2-1-"><td  style="white-space:nowrap; text-align:left;" id="TBL-2-1-1"  
+class="td11"> <span 
+class="cmbx-12">Index                           </span></td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-1-2"  
+class="td11"> <span 
+class="cmbx-12">Value </span></td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-1-3"  
+class="td11"> <span 
+class="cmbx-12">Range </span></td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-2-2-"><td  style="white-space:nowrap; text-align:left;" id="TBL-2-2-1"  
+class="td11"> Automated Readability Index  </td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-2-2"  
+class="td11"> 12.7     </td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-2-3"  
+class="td11"> 5-22     </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-2-3-"><td  style="white-space:nowrap; text-align:left;" id="TBL-2-3-1"  
+class="td11"> Gunning-Fog Index               </td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-3-2"  
+class="td11"> 10.23   </td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-3-3"  
+class="td11"> 0-20     </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-2-4-"><td  style="white-space:nowrap; text-align:left;" id="TBL-2-4-1"  
+class="td11"> Flesch Reading Ease              </td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-4-2"  
+class="td11"> 85.7     </td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-4-3"  
+class="td11"> 0-100    </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-2-5-"><td  style="white-space:nowrap; text-align:left;" id="TBL-2-5-1"  
+class="td11"> Coleman Liau Index              </td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-5-2"  
+class="td11"> 19.39   </td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-5-3"  
+class="td11"> 0-17+   </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-2-6-"><td  style="white-space:nowrap; text-align:left;" id="TBL-2-6-1"  
+class="td11">                           </td></tr></table></div></div>
+                                                                                      
+                                                                                      
+   </div><hr class="endfloat" />
+   </div>
+    
+</body></html> 
+
+                                                                                      
+
+
