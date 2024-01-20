@@ -1,0 +1,197 @@
+\documentclass[12pt]{article}
+\usepackage{listings}
+\usepackage{underscore}
+\usepackage{array}
+\usepackage{graphicx}
+\usepackage{geometry}
+\usepackage{multirow}
+\usepackage{array}
+\geometry{a4paper, margin=1in}
+\usepackage[bookmarks=true]{hyperref}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{float}
+\usepackage{longtable}
+\usepackage{enumitem}
+\usepackage{tikz}
+\usetikzlibrary{mindmap, trees}
+\renewcommand{\arraystretch}{1.5}
+\newcolumntype{P}[1]{>{\centering\arraybackslash}p{#1}}
+
+
+% hi is it working
+% yes
+\def\myversion{1.0}
+\date{}
+%\title{%
+
+%}
+\usepackage{hyperref}
+
+\setlist[itemize]{itemsep=0pt}
+
+\usepackage{imakeidx}
+\makeindex
+
+\begin{document}
+
+\begin{center}
+    
+    \rule{16cm}{5pt}\vskip1cm
+    \begin{bfseries}
+    \begin{center}
+        \includegraphics[width=1in]{Images/iitd_logo.png}
+    \end{center}
+
+        \Huge{DESIGN OF SYSTEMS LAB }\\
+        \textit{Prof. Subrat Kar} [ELP305] 
+        \vspace{2cm}
+        \begin{figure}[H]
+        \centering
+
+        \end{figure}
+        \vspace{0.5cm}
+        Cloth Cleaning Machine
+        Requirements Document\\
+        \LARGE{(Version \myversion)}\\
+        \vspace{4.5cm}
+        Submission by Tribe - E\\
+        \today\\
+    \end{bfseries}
+\end{center}
+\newpage
+\tableofcontents
+\newpage
+
+\input{Pages/Members}
+
+\listoffigures
+
+\listoftables
+\newpage
+\section{Mind Map}
+\vspace{1cm}
+\begin{figure}[H]
+    \centering
+\begin{tikzpicture}
+  \path[mindmap,concept color=pink!90,text=black, text width=4.5cm]
+    node[concept] {Requirements}
+    [clockwise from=0]
+    child[concept color=pink!75] {
+      node[concept] {Inputs}
+      [clockwise from=60]
+      child[concept color=pink!60] { node[concept] {Cloth Details} }
+      child[concept color=pink!60] { node[concept] {Other Inputs} }
+      child[concept color=pink!60] { node[concept] {Mode of Input} }
+    }
+    child[concept color=pink!75] {
+      node[concept] {Outputs}
+      [clockwise from=0]
+    }
+    child[concept color=pink!75] {
+      node[concept] {Power}
+      [clockwise from=-60]
+      child[concept color=pink!60] { node[concept] {Power Source} }
+      child[concept color=pink!60, text width=2cm] { node[concept] {Connectivity} }
+    }
+    child[concept color=pink!75, text width=3cm, level distance=6cm] {
+      node[concept] {Environmental}
+      [clockwise from=180]
+    }
+    child[concept color=pink!75, text width=2.9cm, level distance=6cm] {
+      node[concept] {Site Demanded Requirements}
+      [clockwise from=120]
+      child[concept color=pink!60, level distance=3.7cm] { node[concept] {Location} }
+      child[concept color=pink!60, level distance=3.7cm] { node[concept] {Misc} }
+    }
+    child[concept color=pink!75, text width=2.75cm, level distance=5.5cm] {
+      node[concept] {Time \\Requirements}
+      [clockwise from=90]
+      child[concept color=pink!60, text width=2cm, level distance=4cm] {
+      node[concept] {Operational Time} }
+    };
+\end{tikzpicture}
+    \caption{Mind Map}
+    \label{fig:mindmap}
+\end{figure}
+% \section{Glossary}
+\newpage
+\section{Project Management Details}
+\subsection{Gantt Chart}
+\begin{center}
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=1.05\linewidth]{Images/Gantt Chart (1)_1.jpg}
+        \caption{GANTT Chart}
+        \label{fig:ganttchart}
+    \end{figure}
+\end{center}
+
+\subsection{Network Chart}
+\begin{center}
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=1.05\linewidth]{Images/NetworkChart_1.jpg}
+        \caption{Network Chart}
+        \label{fig:networkchart}
+    \end{figure}
+\end{center}
+
+\subsection{RBS}
+\begin{center}
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=1\linewidth]{Images/RBS_1.jpg}
+        \caption{Resource Breakdown Structure}
+        \label{fig:rbs}
+    \end{figure}
+\end{center}
+
+\subsection{WBS}
+\begin{center}
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=1.1\linewidth]{Images/WBS_1.jpg}
+        \caption{Work Breakdown Structure}
+        \label{fig:wbs}
+    \end{figure}
+\end{center}
+\section{Abstract}
+The goal of this project is to create an effective cloth cleaning equipment specifically for treating white unbleached cotton cloth after production. The cloth needs a particular cleaning procedure because of its unique size, thread count, and ingrained oil-based stains imbued during manufacturing. The machine, intended for semi-industrial settings, needs to be quick to use, use less resources, and adhere to environmental rules. Time efficiency being of utmost importance, each batch must complete a full washing and drying cycle in less than 45 minutes.
+
+\section{Motivation}
+The motivation behind this cloth cleaning machine design project is rooted in addressing a practical need within the textile industry. Manufacturing uncolored cotton cloth presents unique challenges, with oil-based stains acquired during the manufacturing process requiring specialized cleaning. The pursuit of an efficient and tailored solution stems from a commitment to innovation. \\ \\By developing a machine specifically designed for post-manufacturing treatment, we aim to enhance the overall quality and cleanliness of the cloth. The project's focus on utilizing minimal resources aligns with our commitment to environmental responsibility, ensuring compliance with regulatory standards. The project's scope extends beyond technical efficiency. We envision a cloth cleaning machine that caters to the needs of semi-industrial sites. Furthermore, the motivation is fueled by the aspiration to contribute to time efficiency. With a targeted washing and drying cycle of under 45 minutes per batch, we seek to streamline operations and enhance productivity in textile processing.
+\input{Pages/Requirements}
+
+\newpage
+\appendix
+\section{Appendix}
+\subsection{Document ID}
+\begin{itemize}
+    \item Document Type - Private Release
+    \item Document Authorised by : Samarth Singla
+    \item Publication Date : 13 January 2024
+    \item Version Number 1.0
+\end{itemize}
+\subsection{Document Statistics}
+\begin{itemize}
+    \item Number of words = 716
+    \item Number of Sentences = 77
+    \item Number of Characters = 4576
+\end{itemize}
+\subsection{Readability Indices}
+\begin{table}[H]
+
+\begin{center}
+\begin{tabular}{|l|l|l|}
+\hline
+\textbf{Index}              & \textbf{Value} & \textbf{Range} \\ \hline
+Automated Readability Index & 12.7            & 5-22           \\ \hline
+Gunning-Fog Index           & 10.23           & 0-20           \\ \hline
+Flesch Reading Ease         & 85.7           & 0-100          \\ \hline
+Coleman Liau Index          & 19.39          & 0-17+          \\ \hline
+\end{tabular}
+\end{center}
+\end{table}
+
+\end{document}
