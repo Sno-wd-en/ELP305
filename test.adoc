@@ -1,0 +1,28 @@
+= My AsciiDoc Document
+
+== Section 1
+
+This is a paragraph in section 1.
+[graphviz, my-graph.png, png]
+....
+digraph G {
+  A -> B;
+  B -> C;
+  C -> A;
+}
+....
+
+=== Subsection 1.1
+
+Another level of content.
+[mermaid]
+----
+graph TD;
+  A --> B;
+  B --> C;
+  C --> A;
+----
+
+== Section 2
+
+More content in section 2.
