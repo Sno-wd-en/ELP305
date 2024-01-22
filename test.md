@@ -2,7 +2,7 @@ Test MindMap
 
 ```mermaid
 mindmap
-  root(Cleaning Machine)
+root(Cleaning Machine)
     Requirements
         Outputs
         Environmental
@@ -20,21 +20,13 @@ mindmap
             Cloth details
     Specifications
         Pressure Washing Chamber
-            Performance
-            Cost
-            Power
-            Energy
         Man Power
-            Man Hours
-            Task Assignment details
-            Skill Distribution
-            Contengencies
         Solvent Chamber
         Milestone
         Machine Schematic
         Drying Chamber
         Cutting Section
-            Power
-            Performance
-            Cost
+    Design
+        Cycle1
+        Milestones
 ```
