@@ -38,10 +38,3 @@ mindmap
             Performance
             Cost
 ```
-
-```graphviz
-diagraph G{
-  A->B;
-  B->C;
-  C->A;
-}
